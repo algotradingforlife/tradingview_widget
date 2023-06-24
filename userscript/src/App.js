@@ -7,7 +7,7 @@ import Button from './components/Button';
 
 const App = () => {
   const [sl, setSl] = useState('');
-  const [currency, setCurrency] = useState({});
+  const [currency, setCurrency] = useState('');
   const [reward, setReward] = useState('1.5');
 
   const getCurrency = async () => {
@@ -23,7 +23,53 @@ const App = () => {
 
   return (
     <div className='blackBox'>
-      <p className='currencyText'>{currency.symbol}</p>
+      <p className='currencyText'>{currency || 'NA'}</p>
+      <div className='rewardOptions'>
+        <div>
+          <input
+            type='radio'
+            id='onefive'
+            name='onefive'
+            value='1.5'
+            checked={reward === '1.5'}
+            onChange={() => setReward('1.5')}
+          />
+          <label htmlFor='onefive'>1.5</label>
+        </div>
+        <div>
+          <input
+            type='radio'
+            id='two'
+            name='two'
+            value='2'
+            checked={reward === '2'}
+            onChange={() => setReward('2')}
+          />
+          <label htmlFor='two'>2</label>
+        </div>
+        <div>
+          <input
+            type='radio'
+            id='twoFive'
+            name='twoFive'
+            value='2.5'
+            checked={reward === '2.5'}
+            onChange={() => setReward('2.5')}
+          />
+          <label htmlFor='twoFive'>2.5</label>
+        </div>
+        <div>
+          <input
+            type='radio'
+            id='three'
+            name='three'
+            value='3'
+            checked={reward === '3'}
+            onChange={() => setReward('3')}
+          />
+          <label htmlFor='three'>3</label>
+        </div>
+      </div>
       <div className='slTextRow'>
         <p>
           <span>SL</span>
@@ -31,7 +77,7 @@ const App = () => {
         </p>
       </div>
       <div className='orderButtonGroup'>
-        <Button onClick={() => placeOrder(currency, sl, reward)}>Buy</Button>
+        <Button onClick={() => placeOrder(currency, sl, reward)}>Submit</Button>
       </div>
     </div>
   );

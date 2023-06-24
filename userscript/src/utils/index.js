@@ -8,7 +8,6 @@ const placeOrder = (symbol, stopLoss, reward) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      actionType: action,
       symbol: symbol,
       stopLoss: parseFloat(stopLoss),
       reward: parseFloat(reward),
