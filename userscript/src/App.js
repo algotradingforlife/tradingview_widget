@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { awaitElement } from './utils';
 import { placeOrder } from './utils/index';
 import './App.css';
@@ -10,19 +10,18 @@ const App = () => {
   const [currency, setCurrency] = useState('');
   const [reward, setReward] = useState('1.5');
 
-  const getCurrency = async () => {
+  const setCurrencyRef = async () => {
     const currencyButton = await awaitElement('[aria-label = "Symbol Search"]');
-    const currencyText = currencyButton.children[1].textContent + '+';
+    const currencyText = currencyButton.children[1].textContent;
     setCurrency(currencyText);
-    console.log(currencyText);
   };
 
   useEffect(() => {
-    getCurrency();
+    setCurrencyRef();
   }, []);
 
   return (
-    <div className='blackBox'>
+    <div className='blackBox' onMouseEnter={() => setCurrencyRef()}>
       <p className='currencyText'>{currency || 'NA'}</p>
       <div className='rewardOptions'>
         <div>
