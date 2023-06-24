@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { awaitElement } from './utils';
 import { placeOrder } from './utils/index';
 import './App.css';
@@ -8,6 +8,7 @@ import Button from './components/Button';
 const App = () => {
   const [sl, setSl] = useState('');
   const [currency, setCurrency] = useState('');
+  const [risk, setRisk] = useState('0.5');
   const [reward, setReward] = useState('1.5');
 
   const setCurrencyRef = async () => {
@@ -22,7 +23,42 @@ const App = () => {
 
   return (
     <div className='blackBox' onMouseEnter={() => setCurrencyRef()}>
-      <p className='currencyText'>{currency || 'NA'}</p>
+      <div
+        style={{
+          marginBottom: '20px',
+          display: 'flex',
+          justifyContent: 'space-between',
+        }}
+      >
+        <p className='currencyText'>{currency || 'NA'}</p>
+        <div style={{ display: 'flex', color: 'white' }}>
+          <span style={{ marginRight: '20px' }}>Risk: </span>
+          <div style={{ marginRight: '25px' }}>
+            <input
+              type='radio'
+              id='zeroFiveRisk'
+              name='zeroFiveRisk'
+              value='0.5'
+              checked={risk === '0.5'}
+              onChange={() => setRisk('0.5')}
+              style={{ marginRight: '10px' }}
+            />
+            <label htmlFor='zeroFiveRisk'>0.5</label>
+          </div>
+          <div>
+            <input
+              type='radio'
+              id='oneRisk'
+              name='oneRisk'
+              value='1'
+              checked={risk === '1'}
+              onChange={() => setRisk('1')}
+              style={{ marginRight: '10px' }}
+            />
+            <label htmlFor='oneRisk'>1</label>
+          </div>
+        </div>
+      </div>
       <div className='rewardOptions'>
         <div>
           <input
@@ -76,7 +112,14 @@ const App = () => {
         </p>
       </div>
       <div className='orderButtonGroup'>
-        <Button onClick={() => placeOrder(currency, sl, reward)}>Submit</Button>
+        <Button
+          onClick={() => {
+            placeOrder(currency, sl, reward, risk);
+            setSl('');
+          }}
+        >
+          Submit
+        </Button>
       </div>
     </div>
   );

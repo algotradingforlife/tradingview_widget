@@ -1,6 +1,6 @@
 import { config } from '../config';
 
-const placeOrder = (symbol, stopLoss, reward) => {
+const placeOrder = (symbol, stopLoss, reward, risk) => {
   const webhookUrl = config.webhookUrl;
   const postRequestOptions = {
     method: 'POST',
@@ -11,6 +11,7 @@ const placeOrder = (symbol, stopLoss, reward) => {
       symbol: symbol,
       stopLoss: parseFloat(stopLoss),
       reward: parseFloat(reward),
+      risk: parseFloat(risk),
     }),
   };
   return fetch(webhookUrl, postRequestOptions);
