@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { awaitElement } from './utils';
 import { placeOrder } from './utils/index';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 import Button from './components/Button';
@@ -17,12 +20,28 @@ const App = () => {
     setCurrency(currencyText);
   };
 
+  const openOrder = async () => {
+    const response = await placeOrder(currency, sl, reward, risk);
+    const content = await response.json();
+    toast(content);
+    setSl('');
+  };
+
   useEffect(() => {
     setCurrencyRef();
   }, []);
 
   return (
     <div className='blackBox' onMouseEnter={() => setCurrencyRef()}>
+      <ToastContainer
+        position='top-right'
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        theme='dark'
+      />
       <div
         style={{
           marginBottom: '20px',
@@ -112,14 +131,7 @@ const App = () => {
         </p>
       </div>
       <div className='orderButtonGroup'>
-        <Button
-          onClick={() => {
-            placeOrder(currency, sl, reward, risk);
-            setSl('');
-          }}
-        >
-          Submit
-        </Button>
+        <Button onClick={() => openOrder()}>Submit</Button>
       </div>
     </div>
   );

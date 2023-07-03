@@ -1,5 +1,5 @@
 const config = {
-  webhookUrl: '',
+  webhookUrl: 'https://forexfundsdemo2.ngrok.app/open',
 };
 
 export { config };

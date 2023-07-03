@@ -8871,6 +8871,26 @@ if (true) {
 
 /***/ }),
 
+/***/ 866:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var _css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(657);
+/* harmony import */ var _css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(176);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --toastify-color-light: #fff;\n  --toastify-color-dark: #121212;\n  --toastify-color-info: #3498db;\n  --toastify-color-success: #07bc0c;\n  --toastify-color-warning: #f1c40f;\n  --toastify-color-error: #e74c3c;\n  --toastify-color-transparent: rgba(255, 255, 255, 0.7);\n  --toastify-icon-color-info: var(--toastify-color-info);\n  --toastify-icon-color-success: var(--toastify-color-success);\n  --toastify-icon-color-warning: var(--toastify-color-warning);\n  --toastify-icon-color-error: var(--toastify-color-error);\n  --toastify-toast-width: 320px;\n  --toastify-toast-background: #fff;\n  --toastify-toast-min-height: 64px;\n  --toastify-toast-max-height: 800px;\n  --toastify-font-family: sans-serif;\n  --toastify-z-index: 9999;\n  --toastify-text-color-light: #757575;\n  --toastify-text-color-dark: #fff;\n  --toastify-text-color-info: #fff;\n  --toastify-text-color-success: #fff;\n  --toastify-text-color-warning: #fff;\n  --toastify-text-color-error: #fff;\n  --toastify-spinner-color: #616161;\n  --toastify-spinner-color-empty-area: #e0e0e0;\n  --toastify-color-progress-light: linear-gradient(\n    to right,\n    #4cd964,\n    #5ac8fa,\n    #007aff,\n    #34aadc,\n    #5856d6,\n    #ff2d55\n  );\n  --toastify-color-progress-dark: #bb86fc;\n  --toastify-color-progress-info: var(--toastify-color-info);\n  --toastify-color-progress-success: var(--toastify-color-success);\n  --toastify-color-progress-warning: var(--toastify-color-warning);\n  --toastify-color-progress-error: var(--toastify-color-error);\n}\n\n.Toastify__toast-container {\n  z-index: 9999;\n  z-index: var(--toastify-z-index);\n  -webkit-transform: translate3d(0, 0, 9999);\n  -webkit-transform: translate3d(0, 0, var(--toastify-z-index));\n  position: fixed;\n  padding: 4px;\n  width: 320px;\n  width: var(--toastify-toast-width);\n  box-sizing: border-box;\n  color: #fff;\n}\n.Toastify__toast-container--top-left {\n  top: 1em;\n  left: 1em;\n}\n.Toastify__toast-container--top-center {\n  top: 1em;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n}\n.Toastify__toast-container--top-right {\n  top: 1em;\n  right: 1em;\n}\n.Toastify__toast-container--bottom-left {\n  bottom: 1em;\n  left: 1em;\n}\n.Toastify__toast-container--bottom-center {\n  bottom: 1em;\n  left: 50%;\n  -webkit-transform: translateX(-50%);\n          transform: translateX(-50%);\n}\n.Toastify__toast-container--bottom-right {\n  bottom: 1em;\n  right: 1em;\n}\n\n@media only screen and (max-width : 480px) {\n  .Toastify__toast-container {\n    width: 100vw;\n    padding: 0;\n    left: 0;\n    margin: 0;\n  }\n  .Toastify__toast-container--top-left, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right {\n    top: 0;\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n  .Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {\n    bottom: 0;\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n  }\n  .Toastify__toast-container--rtl {\n    right: 0;\n    left: initial;\n  }\n}\n.Toastify__toast {\n  position: relative;\n  min-height: 64px;\n  min-height: var(--toastify-toast-min-height);\n  box-sizing: border-box;\n  margin-bottom: 1rem;\n  padding: 8px;\n  border-radius: 4px;\n  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);\n  display: flex;\n  justify-content: space-between;\n  max-height: 800px;\n  max-height: var(--toastify-toast-max-height);\n  overflow: hidden;\n  font-family: sans-serif;\n  font-family: var(--toastify-font-family);\n  cursor: default;\n  direction: ltr;\n  /* webkit only issue #791 */\n  z-index: 0;\n}\n.Toastify__toast--rtl {\n  direction: rtl;\n}\n.Toastify__toast--close-on-click {\n  cursor: pointer;\n}\n.Toastify__toast-body {\n  margin: auto 0;\n  flex: 1 1 auto;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n}\n.Toastify__toast-body > div:last-child {\n  word-break: break-word;\n  flex: 1 1;\n}\n.Toastify__toast-icon {\n  -webkit-margin-end: 10px;\n          margin-inline-end: 10px;\n  width: 20px;\n  flex-shrink: 0;\n  display: flex;\n}\n\n.Toastify--animate {\n  -webkit-animation-fill-mode: both;\n          animation-fill-mode: both;\n  -webkit-animation-duration: 0.7s;\n          animation-duration: 0.7s;\n}\n\n.Toastify--animate-icon {\n  -webkit-animation-fill-mode: both;\n          animation-fill-mode: both;\n  -webkit-animation-duration: 0.3s;\n          animation-duration: 0.3s;\n}\n\n@media only screen and (max-width : 480px) {\n  .Toastify__toast {\n    margin-bottom: 0;\n    border-radius: 0;\n  }\n}\n.Toastify__toast-theme--dark {\n  background: #121212;\n  background: var(--toastify-color-dark);\n  color: #fff;\n  color: var(--toastify-text-color-dark);\n}\n.Toastify__toast-theme--light {\n  background: #fff;\n  background: var(--toastify-color-light);\n  color: #757575;\n  color: var(--toastify-text-color-light);\n}\n.Toastify__toast-theme--colored.Toastify__toast--default {\n  background: #fff;\n  background: var(--toastify-color-light);\n  color: #757575;\n  color: var(--toastify-text-color-light);\n}\n.Toastify__toast-theme--colored.Toastify__toast--info {\n  color: #fff;\n  color: var(--toastify-text-color-info);\n  background: #3498db;\n  background: var(--toastify-color-info);\n}\n.Toastify__toast-theme--colored.Toastify__toast--success {\n  color: #fff;\n  color: var(--toastify-text-color-success);\n  background: #07bc0c;\n  background: var(--toastify-color-success);\n}\n.Toastify__toast-theme--colored.Toastify__toast--warning {\n  color: #fff;\n  color: var(--toastify-text-color-warning);\n  background: #f1c40f;\n  background: var(--toastify-color-warning);\n}\n.Toastify__toast-theme--colored.Toastify__toast--error {\n  color: #fff;\n  color: var(--toastify-text-color-error);\n  background: #e74c3c;\n  background: var(--toastify-color-error);\n}\n\n.Toastify__progress-bar-theme--light {\n  background: linear-gradient(\n    to right,\n    #4cd964,\n    #5ac8fa,\n    #007aff,\n    #34aadc,\n    #5856d6,\n    #ff2d55\n  );\n  background: var(--toastify-color-progress-light);\n}\n.Toastify__progress-bar-theme--dark {\n  background: #bb86fc;\n  background: var(--toastify-color-progress-dark);\n}\n.Toastify__progress-bar--info {\n  background: #3498db;\n  background: var(--toastify-color-progress-info);\n}\n.Toastify__progress-bar--success {\n  background: #07bc0c;\n  background: var(--toastify-color-progress-success);\n}\n.Toastify__progress-bar--warning {\n  background: #f1c40f;\n  background: var(--toastify-color-progress-warning);\n}\n.Toastify__progress-bar--error {\n  background: #e74c3c;\n  background: var(--toastify-color-progress-error);\n}\n.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--success, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {\n  background: rgba(255, 255, 255, 0.7);\n  background: var(--toastify-color-transparent);\n}\n\n.Toastify__close-button {\n  color: #fff;\n  background: transparent;\n  outline: none;\n  border: none;\n  padding: 0;\n  cursor: pointer;\n  opacity: 0.7;\n  transition: 0.3s ease;\n  align-self: flex-start;\n}\n.Toastify__close-button--light {\n  color: #000;\n  opacity: 0.3;\n}\n.Toastify__close-button > svg {\n  fill: currentColor;\n  height: 16px;\n  width: 14px;\n}\n.Toastify__close-button:hover, .Toastify__close-button:focus {\n  opacity: 1;\n}\n\n@-webkit-keyframes Toastify__trackProgress {\n  0% {\n    -webkit-transform: scaleX(1);\n            transform: scaleX(1);\n  }\n  100% {\n    -webkit-transform: scaleX(0);\n            transform: scaleX(0);\n  }\n}\n\n@keyframes Toastify__trackProgress {\n  0% {\n    -webkit-transform: scaleX(1);\n            transform: scaleX(1);\n  }\n  100% {\n    -webkit-transform: scaleX(0);\n            transform: scaleX(0);\n  }\n}\n.Toastify__progress-bar {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 5px;\n  z-index: 9999;\n  z-index: var(--toastify-z-index);\n  opacity: 0.7;\n  -webkit-transform-origin: left;\n          transform-origin: left;\n}\n.Toastify__progress-bar--animated {\n  -webkit-animation: Toastify__trackProgress linear 1 forwards;\n          animation: Toastify__trackProgress linear 1 forwards;\n}\n.Toastify__progress-bar--controlled {\n  transition: -webkit-transform 0.2s;\n  transition: transform 0.2s;\n  transition: transform 0.2s, -webkit-transform 0.2s;\n}\n.Toastify__progress-bar--rtl {\n  right: 0;\n  left: initial;\n  -webkit-transform-origin: right;\n          transform-origin: right;\n}\n\n.Toastify__spinner {\n  width: 20px;\n  height: 20px;\n  box-sizing: border-box;\n  border: 2px solid;\n  border-radius: 100%;\n  border-color: #e0e0e0;\n  border-color: var(--toastify-spinner-color-empty-area);\n  border-right-color: #616161;\n  border-right-color: var(--toastify-spinner-color);\n  -webkit-animation: Toastify__spin 0.65s linear infinite;\n          animation: Toastify__spin 0.65s linear infinite;\n}\n\n@-webkit-keyframes Toastify__bounceInRight {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n            transform: translate3d(3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n            transform: translate3d(-25px, 0, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n            transform: translate3d(10px, 0, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n            transform: translate3d(-5px, 0, 0);\n  }\n  to {\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n\n@keyframes Toastify__bounceInRight {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(3000px, 0, 0);\n            transform: translate3d(3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(-25px, 0, 0);\n            transform: translate3d(-25px, 0, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(10px, 0, 0);\n            transform: translate3d(10px, 0, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(-5px, 0, 0);\n            transform: translate3d(-5px, 0, 0);\n  }\n  to {\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n@-webkit-keyframes Toastify__bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n            transform: translate3d(-20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n            transform: translate3d(2000px, 0, 0);\n  }\n}\n@keyframes Toastify__bounceOutRight {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(-20px, 0, 0);\n            transform: translate3d(-20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(2000px, 0, 0);\n            transform: translate3d(2000px, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__bounceInLeft {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n            transform: translate3d(-3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n            transform: translate3d(25px, 0, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n            transform: translate3d(-10px, 0, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n            transform: translate3d(5px, 0, 0);\n  }\n  to {\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n@keyframes Toastify__bounceInLeft {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(-3000px, 0, 0);\n            transform: translate3d(-3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(25px, 0, 0);\n            transform: translate3d(25px, 0, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(-10px, 0, 0);\n            transform: translate3d(-10px, 0, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(5px, 0, 0);\n            transform: translate3d(5px, 0, 0);\n  }\n  to {\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n@-webkit-keyframes Toastify__bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n            transform: translate3d(20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n            transform: translate3d(-2000px, 0, 0);\n  }\n}\n@keyframes Toastify__bounceOutLeft {\n  20% {\n    opacity: 1;\n    -webkit-transform: translate3d(20px, 0, 0);\n            transform: translate3d(20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(-2000px, 0, 0);\n            transform: translate3d(-2000px, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__bounceInUp {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n            transform: translate3d(0, 3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n            transform: translate3d(0, -20px, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n            transform: translate3d(0, 10px, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n            transform: translate3d(0, -5px, 0);\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__bounceInUp {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  from {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 3000px, 0);\n            transform: translate3d(0, 3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n            transform: translate3d(0, -20px, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(0, 10px, 0);\n            transform: translate3d(0, 10px, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(0, -5px, 0);\n            transform: translate3d(0, -5px, 0);\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n            transform: translate3d(0, -10px, 0);\n  }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n            transform: translate3d(0, 20px, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n            transform: translate3d(0, -2000px, 0);\n  }\n}\n@keyframes Toastify__bounceOutUp {\n  20% {\n    -webkit-transform: translate3d(0, -10px, 0);\n            transform: translate3d(0, -10px, 0);\n  }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 20px, 0);\n            transform: translate3d(0, 20px, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -2000px, 0);\n            transform: translate3d(0, -2000px, 0);\n  }\n}\n@-webkit-keyframes Toastify__bounceInDown {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n            transform: translate3d(0, -3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n            transform: translate3d(0, 25px, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n            transform: translate3d(0, -10px, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n            transform: translate3d(0, 5px, 0);\n  }\n  to {\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n@keyframes Toastify__bounceInDown {\n  from, 60%, 75%, 90%, to {\n    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(0, -3000px, 0);\n            transform: translate3d(0, -3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, 25px, 0);\n            transform: translate3d(0, 25px, 0);\n  }\n  75% {\n    -webkit-transform: translate3d(0, -10px, 0);\n            transform: translate3d(0, -10px, 0);\n  }\n  90% {\n    -webkit-transform: translate3d(0, 5px, 0);\n            transform: translate3d(0, 5px, 0);\n  }\n  to {\n    -webkit-transform: none;\n            transform: none;\n  }\n}\n@-webkit-keyframes Toastify__bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n            transform: translate3d(0, 10px, 0);\n  }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n            transform: translate3d(0, -20px, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n            transform: translate3d(0, 2000px, 0);\n  }\n}\n@keyframes Toastify__bounceOutDown {\n  20% {\n    -webkit-transform: translate3d(0, 10px, 0);\n            transform: translate3d(0, 10px, 0);\n  }\n  40%, 45% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -20px, 0);\n            transform: translate3d(0, -20px, 0);\n  }\n  to {\n    opacity: 0;\n    -webkit-transform: translate3d(0, 2000px, 0);\n            transform: translate3d(0, 2000px, 0);\n  }\n}\n.Toastify__bounce-enter--top-left, .Toastify__bounce-enter--bottom-left {\n  -webkit-animation-name: Toastify__bounceInLeft;\n          animation-name: Toastify__bounceInLeft;\n}\n.Toastify__bounce-enter--top-right, .Toastify__bounce-enter--bottom-right {\n  -webkit-animation-name: Toastify__bounceInRight;\n          animation-name: Toastify__bounceInRight;\n}\n.Toastify__bounce-enter--top-center {\n  -webkit-animation-name: Toastify__bounceInDown;\n          animation-name: Toastify__bounceInDown;\n}\n.Toastify__bounce-enter--bottom-center {\n  -webkit-animation-name: Toastify__bounceInUp;\n          animation-name: Toastify__bounceInUp;\n}\n\n.Toastify__bounce-exit--top-left, .Toastify__bounce-exit--bottom-left {\n  -webkit-animation-name: Toastify__bounceOutLeft;\n          animation-name: Toastify__bounceOutLeft;\n}\n.Toastify__bounce-exit--top-right, .Toastify__bounce-exit--bottom-right {\n  -webkit-animation-name: Toastify__bounceOutRight;\n          animation-name: Toastify__bounceOutRight;\n}\n.Toastify__bounce-exit--top-center {\n  -webkit-animation-name: Toastify__bounceOutUp;\n          animation-name: Toastify__bounceOutUp;\n}\n.Toastify__bounce-exit--bottom-center {\n  -webkit-animation-name: Toastify__bounceOutDown;\n          animation-name: Toastify__bounceOutDown;\n}\n\n@-webkit-keyframes Toastify__zoomIn {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n  }\n  50% {\n    opacity: 1;\n  }\n}\n\n@keyframes Toastify__zoomIn {\n  from {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n  }\n  50% {\n    opacity: 1;\n  }\n}\n@-webkit-keyframes Toastify__zoomOut {\n  from {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n  }\n  to {\n    opacity: 0;\n  }\n}\n@keyframes Toastify__zoomOut {\n  from {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0;\n    -webkit-transform: scale3d(0.3, 0.3, 0.3);\n            transform: scale3d(0.3, 0.3, 0.3);\n  }\n  to {\n    opacity: 0;\n  }\n}\n.Toastify__zoom-enter {\n  -webkit-animation-name: Toastify__zoomIn;\n          animation-name: Toastify__zoomIn;\n}\n\n.Toastify__zoom-exit {\n  -webkit-animation-name: Toastify__zoomOut;\n          animation-name: Toastify__zoomOut;\n}\n\n@-webkit-keyframes Toastify__flipIn {\n  from {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-animation-timing-function: ease-in;\n            animation-timing-function: ease-in;\n    opacity: 0;\n  }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-animation-timing-function: ease-in;\n            animation-timing-function: ease-in;\n  }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n  to {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n}\n\n@keyframes Toastify__flipIn {\n  from {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-animation-timing-function: ease-in;\n            animation-timing-function: ease-in;\n    opacity: 0;\n  }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-animation-timing-function: ease-in;\n            animation-timing-function: ease-in;\n  }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n  to {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n}\n@-webkit-keyframes Toastify__flipOut {\n  from {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n  to {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n@keyframes Toastify__flipOut {\n  from {\n    -webkit-transform: perspective(400px);\n            transform: perspective(400px);\n  }\n  30% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n  to {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n.Toastify__flip-enter {\n  -webkit-animation-name: Toastify__flipIn;\n          animation-name: Toastify__flipIn;\n}\n\n.Toastify__flip-exit {\n  -webkit-animation-name: Toastify__flipOut;\n          animation-name: Toastify__flipOut;\n}\n\n@-webkit-keyframes Toastify__slideInRight {\n  from {\n    -webkit-transform: translate3d(110%, 0, 0);\n            transform: translate3d(110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes Toastify__slideInRight {\n  from {\n    -webkit-transform: translate3d(110%, 0, 0);\n            transform: translate3d(110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__slideInLeft {\n  from {\n    -webkit-transform: translate3d(-110%, 0, 0);\n            transform: translate3d(-110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__slideInLeft {\n  from {\n    -webkit-transform: translate3d(-110%, 0, 0);\n            transform: translate3d(-110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__slideInUp {\n  from {\n    -webkit-transform: translate3d(0, 110%, 0);\n            transform: translate3d(0, 110%, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__slideInUp {\n  from {\n    -webkit-transform: translate3d(0, 110%, 0);\n            transform: translate3d(0, 110%, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__slideInDown {\n  from {\n    -webkit-transform: translate3d(0, -110%, 0);\n            transform: translate3d(0, -110%, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__slideInDown {\n  from {\n    -webkit-transform: translate3d(0, -110%, 0);\n            transform: translate3d(0, -110%, 0);\n    visibility: visible;\n  }\n  to {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__slideOutRight {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(110%, 0, 0);\n            transform: translate3d(110%, 0, 0);\n  }\n}\n@keyframes Toastify__slideOutRight {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(110%, 0, 0);\n            transform: translate3d(110%, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__slideOutLeft {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(-110%, 0, 0);\n            transform: translate3d(-110%, 0, 0);\n  }\n}\n@keyframes Toastify__slideOutLeft {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(-110%, 0, 0);\n            transform: translate3d(-110%, 0, 0);\n  }\n}\n@-webkit-keyframes Toastify__slideOutDown {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, 500px, 0);\n            transform: translate3d(0, 500px, 0);\n  }\n}\n@keyframes Toastify__slideOutDown {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, 500px, 0);\n            transform: translate3d(0, 500px, 0);\n  }\n}\n@-webkit-keyframes Toastify__slideOutUp {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, -500px, 0);\n            transform: translate3d(0, -500px, 0);\n  }\n}\n@keyframes Toastify__slideOutUp {\n  from {\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    -webkit-transform: translate3d(0, -500px, 0);\n            transform: translate3d(0, -500px, 0);\n  }\n}\n.Toastify__slide-enter--top-left, .Toastify__slide-enter--bottom-left {\n  -webkit-animation-name: Toastify__slideInLeft;\n          animation-name: Toastify__slideInLeft;\n}\n.Toastify__slide-enter--top-right, .Toastify__slide-enter--bottom-right {\n  -webkit-animation-name: Toastify__slideInRight;\n          animation-name: Toastify__slideInRight;\n}\n.Toastify__slide-enter--top-center {\n  -webkit-animation-name: Toastify__slideInDown;\n          animation-name: Toastify__slideInDown;\n}\n.Toastify__slide-enter--bottom-center {\n  -webkit-animation-name: Toastify__slideInUp;\n          animation-name: Toastify__slideInUp;\n}\n\n.Toastify__slide-exit--top-left, .Toastify__slide-exit--bottom-left {\n  -webkit-animation-name: Toastify__slideOutLeft;\n          animation-name: Toastify__slideOutLeft;\n}\n.Toastify__slide-exit--top-right, .Toastify__slide-exit--bottom-right {\n  -webkit-animation-name: Toastify__slideOutRight;\n          animation-name: Toastify__slideOutRight;\n}\n.Toastify__slide-exit--top-center {\n  -webkit-animation-name: Toastify__slideOutUp;\n          animation-name: Toastify__slideOutUp;\n}\n.Toastify__slide-exit--bottom-center {\n  -webkit-animation-name: Toastify__slideOutDown;\n          animation-name: Toastify__slideOutDown;\n}\n\n@-webkit-keyframes Toastify__spin {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n\n@keyframes Toastify__spin {\n  from {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n\n", "",{"version":3,"sources":["webpack://./node_modules/react-toastify/scss/_variables.scss","webpack://./node_modules/react-toastify/dist/ReactToastify.css","webpack://./node_modules/react-toastify/scss/_toastContainer.scss","webpack://./node_modules/react-toastify/scss/_toast.scss","webpack://./node_modules/react-toastify/scss/_theme.scss","webpack://./node_modules/react-toastify/scss/_closeButton.scss","webpack://./node_modules/react-toastify/scss/_progressBar.scss","webpack://./node_modules/react-toastify/scss/_icons.scss","webpack://./node_modules/react-toastify/scss/animations/_bounce.scss","webpack://./node_modules/react-toastify/scss/animations/_zoom.scss","webpack://./node_modules/react-toastify/scss/animations/_flip.scss","webpack://./node_modules/react-toastify/scss/animations/_slide.scss","webpack://./node_modules/react-toastify/scss/animations/_spin.scss"],"names":[],"mappings":"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","sourcesContent":["$rt-namespace: 'Toastify';\n$rt-mobile: 'only screen and (max-width : 480px)' !default;\n\n:root {\n  --toastify-color-light: #fff;\n  --toastify-color-dark: #121212;\n  --toastify-color-info: #3498db;\n  --toastify-color-success: #07bc0c;\n  --toastify-color-warning: #f1c40f;\n  --toastify-color-error: #e74c3c;\n  --toastify-color-transparent: rgba(255, 255, 255, 0.7);\n\n  --toastify-icon-color-info: var(--toastify-color-info);\n  --toastify-icon-color-success: var(--toastify-color-success);\n  --toastify-icon-color-warning: var(--toastify-color-warning);\n  --toastify-icon-color-error: var(--toastify-color-error);\n\n  --toastify-toast-width: 320px;\n  --toastify-toast-background: #fff;\n  --toastify-toast-min-height: 64px;\n  --toastify-toast-max-height: 800px;\n  --toastify-font-family: sans-serif;\n  --toastify-z-index: 9999;\n\n  --toastify-text-color-light: #757575;\n  --toastify-text-color-dark: #fff;\n\n  //Used only for colored theme\n  --toastify-text-color-info: #fff;\n  --toastify-text-color-success: #fff;\n  --toastify-text-color-warning: #fff;\n  --toastify-text-color-error: #fff;\n\n  --toastify-spinner-color: #616161;\n  --toastify-spinner-color-empty-area: #e0e0e0;\n\n  // Used when no type is provided\n  --toastify-color-progress-light: linear-gradient(\n    to right,\n    #4cd964,\n    #5ac8fa,\n    #007aff,\n    #34aadc,\n    #5856d6,\n    #ff2d55\n  );\n  // Used when no type is provided\n  --toastify-color-progress-dark: #bb86fc;\n  --toastify-color-progress-info: var(--toastify-color-info);\n  --toastify-color-progress-success: var(--toastify-color-success);\n  --toastify-color-progress-warning: var(--toastify-color-warning);\n  --toastify-color-progress-error: var(--toastify-color-error);\n}\n",":root {\n  --toastify-color-light: #fff;\n  --toastify-color-dark: #121212;\n  --toastify-color-info: #3498db;\n  --toastify-color-success: #07bc0c;\n  --toastify-color-warning: #f1c40f;\n  --toastify-color-error: #e74c3c;\n  --toastify-color-transparent: rgba(255, 255, 255, 0.7);\n  --toastify-icon-color-info: var(--toastify-color-info);\n  --toastify-icon-color-success: var(--toastify-color-success);\n  --toastify-icon-color-warning: var(--toastify-color-warning);\n  --toastify-icon-color-error: var(--toastify-color-error);\n  --toastify-toast-width: 320px;\n  --toastify-toast-background: #fff;\n  --toastify-toast-min-height: 64px;\n  --toastify-toast-max-height: 800px;\n  --toastify-font-family: sans-serif;\n  --toastify-z-index: 9999;\n  --toastify-text-color-light: #757575;\n  --toastify-text-color-dark: #fff;\n  --toastify-text-color-info: #fff;\n  --toastify-text-color-success: #fff;\n  --toastify-text-color-warning: #fff;\n  --toastify-text-color-error: #fff;\n  --toastify-spinner-color: #616161;\n  --toastify-spinner-color-empty-area: #e0e0e0;\n  --toastify-color-progress-light: linear-gradient(\n    to right,\n    #4cd964,\n    #5ac8fa,\n    #007aff,\n    #34aadc,\n    #5856d6,\n    #ff2d55\n  );\n  --toastify-color-progress-dark: #bb86fc;\n  --toastify-color-progress-info: var(--toastify-color-info);\n  --toastify-color-progress-success: var(--toastify-color-success);\n  --toastify-color-progress-warning: var(--toastify-color-warning);\n  --toastify-color-progress-error: var(--toastify-color-error);\n}\n\n.Toastify__toast-container {\n  z-index: var(--toastify-z-index);\n  -webkit-transform: translate3d(0, 0, var(--toastify-z-index));\n  position: fixed;\n  padding: 4px;\n  width: var(--toastify-toast-width);\n  box-sizing: border-box;\n  color: #fff;\n}\n.Toastify__toast-container--top-left {\n  top: 1em;\n  left: 1em;\n}\n.Toastify__toast-container--top-center {\n  top: 1em;\n  left: 50%;\n  transform: translateX(-50%);\n}\n.Toastify__toast-container--top-right {\n  top: 1em;\n  right: 1em;\n}\n.Toastify__toast-container--bottom-left {\n  bottom: 1em;\n  left: 1em;\n}\n.Toastify__toast-container--bottom-center {\n  bottom: 1em;\n  left: 50%;\n  transform: translateX(-50%);\n}\n.Toastify__toast-container--bottom-right {\n  bottom: 1em;\n  right: 1em;\n}\n\n@media only screen and (max-width : 480px) {\n  .Toastify__toast-container {\n    width: 100vw;\n    padding: 0;\n    left: 0;\n    margin: 0;\n  }\n  .Toastify__toast-container--top-left, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right {\n    top: 0;\n    transform: translateX(0);\n  }\n  .Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right {\n    bottom: 0;\n    transform: translateX(0);\n  }\n  .Toastify__toast-container--rtl {\n    right: 0;\n    left: initial;\n  }\n}\n.Toastify__toast {\n  position: relative;\n  min-height: var(--toastify-toast-min-height);\n  box-sizing: border-box;\n  margin-bottom: 1rem;\n  padding: 8px;\n  border-radius: 4px;\n  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-pack: justify;\n      justify-content: space-between;\n  max-height: var(--toastify-toast-max-height);\n  overflow: hidden;\n  font-family: var(--toastify-font-family);\n  cursor: default;\n  direction: ltr;\n  /* webkit only issue #791 */\n  z-index: 0;\n}\n.Toastify__toast--rtl {\n  direction: rtl;\n}\n.Toastify__toast--close-on-click {\n  cursor: pointer;\n}\n.Toastify__toast-body {\n  margin: auto 0;\n  -ms-flex: 1 1 auto;\n      flex: 1 1 auto;\n  padding: 6px;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-align: center;\n      align-items: center;\n}\n.Toastify__toast-body > div:last-child {\n  word-break: break-word;\n  -ms-flex: 1;\n      flex: 1;\n}\n.Toastify__toast-icon {\n  -webkit-margin-end: 10px;\n          margin-inline-end: 10px;\n  width: 20px;\n  -ms-flex-negative: 0;\n      flex-shrink: 0;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.Toastify--animate {\n  animation-fill-mode: both;\n  animation-duration: 0.7s;\n}\n\n.Toastify--animate-icon {\n  animation-fill-mode: both;\n  animation-duration: 0.3s;\n}\n\n@media only screen and (max-width : 480px) {\n  .Toastify__toast {\n    margin-bottom: 0;\n    border-radius: 0;\n  }\n}\n.Toastify__toast-theme--dark {\n  background: var(--toastify-color-dark);\n  color: var(--toastify-text-color-dark);\n}\n.Toastify__toast-theme--light {\n  background: var(--toastify-color-light);\n  color: var(--toastify-text-color-light);\n}\n.Toastify__toast-theme--colored.Toastify__toast--default {\n  background: var(--toastify-color-light);\n  color: var(--toastify-text-color-light);\n}\n.Toastify__toast-theme--colored.Toastify__toast--info {\n  color: var(--toastify-text-color-info);\n  background: var(--toastify-color-info);\n}\n.Toastify__toast-theme--colored.Toastify__toast--success {\n  color: var(--toastify-text-color-success);\n  background: var(--toastify-color-success);\n}\n.Toastify__toast-theme--colored.Toastify__toast--warning {\n  color: var(--toastify-text-color-warning);\n  background: var(--toastify-color-warning);\n}\n.Toastify__toast-theme--colored.Toastify__toast--error {\n  color: var(--toastify-text-color-error);\n  background: var(--toastify-color-error);\n}\n\n.Toastify__progress-bar-theme--light {\n  background: var(--toastify-color-progress-light);\n}\n.Toastify__progress-bar-theme--dark {\n  background: var(--toastify-color-progress-dark);\n}\n.Toastify__progress-bar--info {\n  background: var(--toastify-color-progress-info);\n}\n.Toastify__progress-bar--success {\n  background: var(--toastify-color-progress-success);\n}\n.Toastify__progress-bar--warning {\n  background: var(--toastify-color-progress-warning);\n}\n.Toastify__progress-bar--error {\n  background: var(--toastify-color-progress-error);\n}\n.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--success, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning, .Toastify__progress-bar-theme--colored.Toastify__progress-bar--error {\n  background: var(--toastify-color-transparent);\n}\n\n.Toastify__close-button {\n  color: #fff;\n  background: transparent;\n  outline: none;\n  border: none;\n  padding: 0;\n  cursor: pointer;\n  opacity: 0.7;\n  transition: 0.3s ease;\n  -ms-flex-item-align: start;\n      align-self: flex-start;\n}\n.Toastify__close-button--light {\n  color: #000;\n  opacity: 0.3;\n}\n.Toastify__close-button > svg {\n  fill: currentColor;\n  height: 16px;\n  width: 14px;\n}\n.Toastify__close-button:hover, .Toastify__close-button:focus {\n  opacity: 1;\n}\n\n@keyframes Toastify__trackProgress {\n  0% {\n    transform: scaleX(1);\n  }\n  100% {\n    transform: scaleX(0);\n  }\n}\n.Toastify__progress-bar {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 5px;\n  z-index: var(--toastify-z-index);\n  opacity: 0.7;\n  transform-origin: left;\n}\n.Toastify__progress-bar--animated {\n  animation: Toastify__trackProgress linear 1 forwards;\n}\n.Toastify__progress-bar--controlled {\n  transition: transform 0.2s;\n}\n.Toastify__progress-bar--rtl {\n  right: 0;\n  left: initial;\n  transform-origin: right;\n}\n\n.Toastify__spinner {\n  width: 20px;\n  height: 20px;\n  box-sizing: border-box;\n  border: 2px solid;\n  border-radius: 100%;\n  border-color: var(--toastify-spinner-color-empty-area);\n  border-right-color: var(--toastify-spinner-color);\n  animation: Toastify__spin 0.65s linear infinite;\n}\n\n@keyframes Toastify__bounceInRight {\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  from {\n    opacity: 0;\n    transform: translate3d(3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(-25px, 0, 0);\n  }\n  75% {\n    transform: translate3d(10px, 0, 0);\n  }\n  90% {\n    transform: translate3d(-5px, 0, 0);\n  }\n  to {\n    transform: none;\n  }\n}\n@keyframes Toastify__bounceOutRight {\n  20% {\n    opacity: 1;\n    transform: translate3d(-20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(2000px, 0, 0);\n  }\n}\n@keyframes Toastify__bounceInLeft {\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  0% {\n    opacity: 0;\n    transform: translate3d(-3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(25px, 0, 0);\n  }\n  75% {\n    transform: translate3d(-10px, 0, 0);\n  }\n  90% {\n    transform: translate3d(5px, 0, 0);\n  }\n  to {\n    transform: none;\n  }\n}\n@keyframes Toastify__bounceOutLeft {\n  20% {\n    opacity: 1;\n    transform: translate3d(20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(-2000px, 0, 0);\n  }\n}\n@keyframes Toastify__bounceInUp {\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  from {\n    opacity: 0;\n    transform: translate3d(0, 3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(0, -20px, 0);\n  }\n  75% {\n    transform: translate3d(0, 10px, 0);\n  }\n  90% {\n    transform: translate3d(0, -5px, 0);\n  }\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__bounceOutUp {\n  20% {\n    transform: translate3d(0, -10px, 0);\n  }\n  40%, 45% {\n    opacity: 1;\n    transform: translate3d(0, 20px, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(0, -2000px, 0);\n  }\n}\n@keyframes Toastify__bounceInDown {\n  from, 60%, 75%, 90%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n  }\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(0, 25px, 0);\n  }\n  75% {\n    transform: translate3d(0, -10px, 0);\n  }\n  90% {\n    transform: translate3d(0, 5px, 0);\n  }\n  to {\n    transform: none;\n  }\n}\n@keyframes Toastify__bounceOutDown {\n  20% {\n    transform: translate3d(0, 10px, 0);\n  }\n  40%, 45% {\n    opacity: 1;\n    transform: translate3d(0, -20px, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(0, 2000px, 0);\n  }\n}\n.Toastify__bounce-enter--top-left, .Toastify__bounce-enter--bottom-left {\n  animation-name: Toastify__bounceInLeft;\n}\n.Toastify__bounce-enter--top-right, .Toastify__bounce-enter--bottom-right {\n  animation-name: Toastify__bounceInRight;\n}\n.Toastify__bounce-enter--top-center {\n  animation-name: Toastify__bounceInDown;\n}\n.Toastify__bounce-enter--bottom-center {\n  animation-name: Toastify__bounceInUp;\n}\n\n.Toastify__bounce-exit--top-left, .Toastify__bounce-exit--bottom-left {\n  animation-name: Toastify__bounceOutLeft;\n}\n.Toastify__bounce-exit--top-right, .Toastify__bounce-exit--bottom-right {\n  animation-name: Toastify__bounceOutRight;\n}\n.Toastify__bounce-exit--top-center {\n  animation-name: Toastify__bounceOutUp;\n}\n.Toastify__bounce-exit--bottom-center {\n  animation-name: Toastify__bounceOutDown;\n}\n\n@keyframes Toastify__zoomIn {\n  from {\n    opacity: 0;\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n  50% {\n    opacity: 1;\n  }\n}\n@keyframes Toastify__zoomOut {\n  from {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0;\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n  to {\n    opacity: 0;\n  }\n}\n.Toastify__zoom-enter {\n  animation-name: Toastify__zoomIn;\n}\n\n.Toastify__zoom-exit {\n  animation-name: Toastify__zoomOut;\n}\n\n@keyframes Toastify__flipIn {\n  from {\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    animation-timing-function: ease-in;\n    opacity: 0;\n  }\n  40% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    animation-timing-function: ease-in;\n  }\n  60% {\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n  80% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n  to {\n    transform: perspective(400px);\n  }\n}\n@keyframes Toastify__flipOut {\n  from {\n    transform: perspective(400px);\n  }\n  30% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n  to {\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n.Toastify__flip-enter {\n  animation-name: Toastify__flipIn;\n}\n\n.Toastify__flip-exit {\n  animation-name: Toastify__flipOut;\n}\n\n@keyframes Toastify__slideInRight {\n  from {\n    transform: translate3d(110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__slideInLeft {\n  from {\n    transform: translate3d(-110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__slideInUp {\n  from {\n    transform: translate3d(0, 110%, 0);\n    visibility: visible;\n  }\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__slideInDown {\n  from {\n    transform: translate3d(0, -110%, 0);\n    visibility: visible;\n  }\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n}\n@keyframes Toastify__slideOutRight {\n  from {\n    transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(110%, 0, 0);\n  }\n}\n@keyframes Toastify__slideOutLeft {\n  from {\n    transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(-110%, 0, 0);\n  }\n}\n@keyframes Toastify__slideOutDown {\n  from {\n    transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(0, 500px, 0);\n  }\n}\n@keyframes Toastify__slideOutUp {\n  from {\n    transform: translate3d(0, 0, 0);\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(0, -500px, 0);\n  }\n}\n.Toastify__slide-enter--top-left, .Toastify__slide-enter--bottom-left {\n  animation-name: Toastify__slideInLeft;\n}\n.Toastify__slide-enter--top-right, .Toastify__slide-enter--bottom-right {\n  animation-name: Toastify__slideInRight;\n}\n.Toastify__slide-enter--top-center {\n  animation-name: Toastify__slideInDown;\n}\n.Toastify__slide-enter--bottom-center {\n  animation-name: Toastify__slideInUp;\n}\n\n.Toastify__slide-exit--top-left, .Toastify__slide-exit--bottom-left {\n  animation-name: Toastify__slideOutLeft;\n}\n.Toastify__slide-exit--top-right, .Toastify__slide-exit--bottom-right {\n  animation-name: Toastify__slideOutRight;\n}\n.Toastify__slide-exit--top-center {\n  animation-name: Toastify__slideOutUp;\n}\n.Toastify__slide-exit--bottom-center {\n  animation-name: Toastify__slideOutDown;\n}\n\n@keyframes Toastify__spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n/*# sourceMappingURL=ReactToastify.css.map */",".#{$rt-namespace}__toast-container {\n  z-index: var(--toastify-z-index);\n  -webkit-transform: translate3d(0, 0, var(--toastify-z-index));\n  position: fixed;\n  padding: 4px;\n  width: var(--toastify-toast-width);\n  box-sizing: border-box;\n  color: #fff;\n  &--top-left {\n    top: 1em;\n    left: 1em;\n  }\n  &--top-center {\n    top: 1em;\n    left: 50%;\n    transform: translateX(-50%);\n  }\n  &--top-right {\n    top: 1em;\n    right: 1em;\n  }\n  &--bottom-left {\n    bottom: 1em;\n    left: 1em;\n  }\n  &--bottom-center {\n    bottom: 1em;\n    left: 50%;\n    transform: translateX(-50%);\n  }\n  &--bottom-right {\n    bottom: 1em;\n    right: 1em;\n  }\n}\n\n@media #{$rt-mobile} {\n  .#{$rt-namespace}__toast-container {\n    width: 100vw;\n    padding: 0;\n    left: 0;\n    margin: 0;\n    &--top-left,\n    &--top-center,\n    &--top-right {\n      top: 0;\n      transform: translateX(0);\n    }\n    &--bottom-left,\n    &--bottom-center,\n    &--bottom-right {\n      bottom: 0;\n      transform: translateX(0);\n    }\n    &--rtl {\n      right: 0;\n      left: initial;\n    }\n  }\n}\n",".#{$rt-namespace}__toast {\n  position: relative;\n  min-height: var(--toastify-toast-min-height);\n  box-sizing: border-box;\n  margin-bottom: 1rem;\n  padding: 8px;\n  border-radius: 4px;\n  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);\n  display: flex;\n  justify-content: space-between;\n  max-height: var(--toastify-toast-max-height);\n  overflow: hidden;\n  font-family: var(--toastify-font-family);\n  cursor: default;\n  direction: ltr;\n  /* webkit only issue #791 */\n  z-index: 0;\n  &--rtl {\n    direction: rtl;\n  }\n  &--close-on-click {\n    cursor: pointer;\n  }\n  &-body {\n    margin: auto 0;\n    flex: 1 1 auto;\n    padding: 6px;\n    display: flex;\n    align-items: center;\n    & > div:last-child {\n      word-break: break-word;\n      flex: 1;\n    }\n  }\n  &-icon {\n    margin-inline-end: 10px;\n    width: 20px;\n    flex-shrink: 0;\n    display: flex;\n  }\n}\n\n.#{$rt-namespace}--animate {\n  animation-fill-mode: both;\n  animation-duration: 0.7s;\n}\n\n.#{$rt-namespace}--animate-icon {\n  animation-fill-mode: both;\n  animation-duration: 0.3s;\n}\n\n@media #{$rt-mobile} {\n  .#{$rt-namespace}__toast {\n    margin-bottom: 0;\n    border-radius: 0;\n  }\n}\n",".#{$rt-namespace}__toast {\n  &-theme--dark {\n    background: var(--toastify-color-dark);\n    color: var(--toastify-text-color-dark);\n  }\n  &-theme--light {\n    background: var(--toastify-color-light);\n    color: var(--toastify-text-color-light);\n  }\n  &-theme--colored#{&}--default {\n    background: var(--toastify-color-light);\n    color: var(--toastify-text-color-light);\n  }\n  &-theme--colored#{&}--info {\n    color: var(--toastify-text-color-info);\n    background: var(--toastify-color-info);\n  }\n  &-theme--colored#{&}--success {\n    color: var(--toastify-text-color-success);\n    background: var(--toastify-color-success);\n  }\n  &-theme--colored#{&}--warning {\n    color: var(--toastify-text-color-warning);\n    background: var(--toastify-color-warning);\n  }\n  &-theme--colored#{&}--error {\n    color: var(--toastify-text-color-error);\n    background: var(--toastify-color-error);\n  }\n}\n\n.#{$rt-namespace}__progress-bar {\n  &-theme--light {\n    background: var(--toastify-color-progress-light);\n  }\n  &-theme--dark {\n    background: var(--toastify-color-progress-dark);\n  }\n  &--info {\n    background: var(--toastify-color-progress-info);\n  }\n  &--success {\n    background: var(--toastify-color-progress-success);\n  }\n  &--warning {\n    background: var(--toastify-color-progress-warning);\n  }\n  &--error {\n    background: var(--toastify-color-progress-error);\n  }\n  &-theme--colored#{&}--info,\n  &-theme--colored#{&}--success,\n  &-theme--colored#{&}--warning,\n  &-theme--colored#{&}--error {\n    background: var(--toastify-color-transparent);\n  }\n}\n",".#{$rt-namespace}__close-button {\n  color: #fff;\n  background: transparent;\n  outline: none;\n  border: none;\n  padding: 0;\n  cursor: pointer;\n  opacity: 0.7;\n  transition: 0.3s ease;\n  align-self: flex-start;\n\n  &--light {\n    color: #000;\n    opacity: 0.3;\n  }\n\n  & > svg {\n    fill: currentColor;\n    height: 16px;\n    width: 14px;\n  }\n\n  &:hover,\n  &:focus {\n    opacity: 1;\n  }\n}\n","@keyframes #{$rt-namespace}__trackProgress {\n  0% {\n    transform: scaleX(1);\n  }\n  100% {\n    transform: scaleX(0);\n  }\n}\n\n.#{$rt-namespace}__progress-bar {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 5px;\n  z-index: var(--toastify-z-index);\n  opacity: 0.7;\n  transform-origin: left;\n\n  &--animated {\n    animation: #{$rt-namespace}__trackProgress linear 1 forwards;\n  }\n\n  &--controlled {\n    transition: transform 0.2s;\n  }\n\n  &--rtl {\n    right: 0;\n    left: initial;\n    transform-origin: right;\n  }\n}\n",".#{$rt-namespace}__spinner {\n  width: 20px;\n  height: 20px;\n  box-sizing: border-box;\n  border: 2px solid;\n  border-radius: 100%;\n  border-color: var(--toastify-spinner-color-empty-area);\n  border-right-color: var(--toastify-spinner-color);\n  animation: #{$rt-namespace}__spin 0.65s linear infinite;\n}\n","@mixin timing-function {\n  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);\n}\n\n@keyframes #{$rt-namespace}__bounceInRight {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    @include timing-function;\n  }\n  from {\n    opacity: 0;\n    transform: translate3d(3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(-25px, 0, 0);\n  }\n  75% {\n    transform: translate3d(10px, 0, 0);\n  }\n  90% {\n    transform: translate3d(-5px, 0, 0);\n  }\n  to {\n    transform: none;\n  }\n}\n\n@keyframes #{$rt-namespace}__bounceOutRight {\n  20% {\n    opacity: 1;\n    transform: translate3d(-20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(2000px, 0, 0);\n  }\n}\n\n@keyframes #{$rt-namespace}__bounceInLeft {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    @include timing-function;\n  }\n  0% {\n    opacity: 0;\n    transform: translate3d(-3000px, 0, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(25px, 0, 0);\n  }\n  75% {\n    transform: translate3d(-10px, 0, 0);\n  }\n  90% {\n    transform: translate3d(5px, 0, 0);\n  }\n  to {\n    transform: none;\n  }\n}\n\n@keyframes #{$rt-namespace}__bounceOutLeft {\n  20% {\n    opacity: 1;\n    transform: translate3d(20px, 0, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(-2000px, 0, 0);\n  }\n}\n\n@keyframes #{$rt-namespace}__bounceInUp {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    @include timing-function;\n  }\n  from {\n    opacity: 0;\n    transform: translate3d(0, 3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(0, -20px, 0);\n  }\n  75% {\n    transform: translate3d(0, 10px, 0);\n  }\n  90% {\n    transform: translate3d(0, -5px, 0);\n  }\n  to {\n    transform: translate3d(0, 0, 0);\n  }\n}\n\n@keyframes #{$rt-namespace}__bounceOutUp {\n  20% {\n    transform: translate3d(0, -10px, 0);\n  }\n  40%,\n  45% {\n    opacity: 1;\n    transform: translate3d(0, 20px, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(0, -2000px, 0);\n  }\n}\n\n@keyframes #{$rt-namespace}__bounceInDown {\n  from,\n  60%,\n  75%,\n  90%,\n  to {\n    @include timing-function;\n  }\n  0% {\n    opacity: 0;\n    transform: translate3d(0, -3000px, 0);\n  }\n  60% {\n    opacity: 1;\n    transform: translate3d(0, 25px, 0);\n  }\n  75% {\n    transform: translate3d(0, -10px, 0);\n  }\n  90% {\n    transform: translate3d(0, 5px, 0);\n  }\n  to {\n    transform: none;\n  }\n}\n\n@keyframes #{$rt-namespace}__bounceOutDown {\n  20% {\n    transform: translate3d(0, 10px, 0);\n  }\n  40%,\n  45% {\n    opacity: 1;\n    transform: translate3d(0, -20px, 0);\n  }\n  to {\n    opacity: 0;\n    transform: translate3d(0, 2000px, 0);\n  }\n}\n\n.#{$rt-namespace}__bounce-enter {\n  &--top-left,\n  &--bottom-left {\n    animation-name: #{$rt-namespace}__bounceInLeft;\n  }\n  &--top-right,\n  &--bottom-right {\n    animation-name: #{$rt-namespace}__bounceInRight;\n  }\n  &--top-center {\n    animation-name: #{$rt-namespace}__bounceInDown;\n  }\n  &--bottom-center {\n    animation-name: #{$rt-namespace}__bounceInUp;\n  }\n}\n\n.#{$rt-namespace}__bounce-exit {\n  &--top-left,\n  &--bottom-left {\n    animation-name: #{$rt-namespace}__bounceOutLeft;\n  }\n  &--top-right,\n  &--bottom-right {\n    animation-name: #{$rt-namespace}__bounceOutRight;\n  }\n  &--top-center {\n    animation-name: #{$rt-namespace}__bounceOutUp;\n  }\n  &--bottom-center {\n    animation-name: #{$rt-namespace}__bounceOutDown;\n  }\n}\n","@keyframes #{$rt-namespace}__zoomIn {\n  from {\n    opacity: 0;\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n  50% {\n    opacity: 1;\n  }\n}\n\n@keyframes #{$rt-namespace}__zoomOut {\n  from {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0;\n    transform: scale3d(0.3, 0.3, 0.3);\n  }\n  to {\n    opacity: 0;\n  }\n}\n\n.#{$rt-namespace}__zoom-enter {\n  animation-name: #{$rt-namespace}__zoomIn;\n}\n\n.#{$rt-namespace}__zoom-exit {\n  animation-name: #{$rt-namespace}__zoomOut;\n}\n","@keyframes #{$rt-namespace}__flipIn {\n  from {\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    animation-timing-function: ease-in;\n    opacity: 0;\n  }\n  40% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    animation-timing-function: ease-in;\n  }\n  60% {\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1;\n  }\n  80% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);\n  }\n  to {\n    transform: perspective(400px);\n  }\n}\n\n@keyframes #{$rt-namespace}__flipOut {\n  from {\n    transform: perspective(400px);\n  }\n  30% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    opacity: 1;\n  }\n  to {\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    opacity: 0;\n  }\n}\n\n.#{$rt-namespace}__flip-enter {\n  animation-name: #{$rt-namespace}__flipIn;\n}\n\n.#{$rt-namespace}__flip-exit {\n  animation-name: #{$rt-namespace}__flipOut;\n}\n","@mixin transform {\n  transform: translate3d(0, 0, 0);\n}\n\n@keyframes #{$rt-namespace}__slideInRight {\n  from {\n    transform: translate3d(110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    @include transform;\n  }\n}\n\n@keyframes #{$rt-namespace}__slideInLeft {\n  from {\n    transform: translate3d(-110%, 0, 0);\n    visibility: visible;\n  }\n  to {\n    @include transform;\n  }\n}\n\n@keyframes #{$rt-namespace}__slideInUp {\n  from {\n    transform: translate3d(0, 110%, 0);\n    visibility: visible;\n  }\n  to {\n    @include transform;\n  }\n}\n\n@keyframes #{$rt-namespace}__slideInDown {\n  from {\n    transform: translate3d(0, -110%, 0);\n    visibility: visible;\n  }\n  to {\n    @include transform;\n  }\n}\n\n@keyframes #{$rt-namespace}__slideOutRight {\n  from {\n    @include transform;\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(110%, 0, 0);\n  }\n}\n\n@keyframes #{$rt-namespace}__slideOutLeft {\n  from {\n    @include transform;\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(-110%, 0, 0);\n  }\n}\n\n@keyframes #{$rt-namespace}__slideOutDown {\n  from {\n    @include transform;\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(0, 500px, 0);\n  }\n}\n\n@keyframes #{$rt-namespace}__slideOutUp {\n  from {\n    @include transform;\n  }\n  to {\n    visibility: hidden;\n    transform: translate3d(0, -500px, 0);\n  }\n}\n\n.#{$rt-namespace}__slide-enter {\n  &--top-left,\n  &--bottom-left {\n    animation-name: #{$rt-namespace}__slideInLeft;\n  }\n  &--top-right,\n  &--bottom-right {\n    animation-name: #{$rt-namespace}__slideInRight;\n  }\n  &--top-center {\n    animation-name: #{$rt-namespace}__slideInDown;\n  }\n  &--bottom-center {\n    animation-name: #{$rt-namespace}__slideInUp;\n  }\n}\n\n.#{$rt-namespace}__slide-exit {\n  &--top-left,\n  &--bottom-left {\n    animation-name: #{$rt-namespace}__slideOutLeft;\n  }\n  &--top-right,\n  &--bottom-right {\n    animation-name: #{$rt-namespace}__slideOutRight;\n  }\n  &--top-center {\n    animation-name: #{$rt-namespace}__slideOutUp;\n  }\n  &--bottom-center {\n    animation-name: #{$rt-namespace}__slideOutDown;\n  }\n}\n","@keyframes #{$rt-namespace}__spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {};
+/* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ 7:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -8883,7 +8903,7 @@ if (true) {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".blackBox {\r\n  background-color: black;\r\n  width: 250px;\r\n  position: fixed;\r\n  top: 0px;\r\n  right: 0px;\r\n  padding: 10px;\r\n}\r\n\r\n.blackBoxCenter {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.rewardOptions {\r\n  margin-bottom: 15px;\r\n  color: white;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  & > div > input {\r\n    margin-right: 5px;\r\n  }\r\n}\r\n\r\n.currencyText {\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.slTextRow {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.slTextRow > p {\r\n  margin: 0px;\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  width: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n  font-size: 18px;\r\n}\r\n\r\n.slTextRow > p > input {\r\n  padding: 5px;\r\n  width: 100%;\r\n}\r\n\r\n.orderButtonGroup {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.orderButtonGroup > button {\r\n  flex: 1 1;\r\n  height: 30px;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,YAAY;EACZ,eAAe;EACf,QAAQ;EACR,UAAU;EACV,aAAa;AACf;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,aAAa;EACb,8BAA8B;EAC9B;IACE,iBAAiB;EACnB;AACF;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,yCAAyC;EACzC,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,gBAAgB;EAChB,yCAAyC;EACzC,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,SAAO;EACP,YAAY;AACd","sourcesContent":[".blackBox {\r\n  background-color: black;\r\n  width: 250px;\r\n  position: fixed;\r\n  top: 0px;\r\n  right: 0px;\r\n  padding: 10px;\r\n}\r\n\r\n.blackBoxCenter {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.rewardOptions {\r\n  margin-bottom: 15px;\r\n  color: white;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  & > div > input {\r\n    margin-right: 5px;\r\n  }\r\n}\r\n\r\n.currencyText {\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  margin-bottom: 10px;\r\n}\r\n\r\n.slTextRow {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.slTextRow > p {\r\n  margin: 0px;\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  width: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n  font-size: 18px;\r\n}\r\n\r\n.slTextRow > p > input {\r\n  padding: 5px;\r\n  width: 100%;\r\n}\r\n\r\n.orderButtonGroup {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.orderButtonGroup > button {\r\n  flex: 1;\r\n  height: 30px;\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".blackBox {\r\n  background-color: black;\r\n  width: 250px;\r\n  position: fixed;\r\n  top: 0px;\r\n  right: 0px;\r\n  padding: 10px;\r\n}\r\n\r\n.blackBoxCenter {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.rewardOptions {\r\n  margin-bottom: 15px;\r\n  color: white;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  & > div > input {\r\n    margin-right: 5px;\r\n  }\r\n}\r\n\r\n.currencyText {\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n.slTextRow {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.slTextRow > p {\r\n  margin: 0px;\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  width: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n  font-size: 18px;\r\n}\r\n\r\n.slTextRow > p > input {\r\n  padding: 5px;\r\n  width: 100%;\r\n}\r\n\r\n.orderButtonGroup {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.orderButtonGroup > button {\r\n  flex: 1 1;\r\n  height: 30px;\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,YAAY;EACZ,eAAe;EACf,QAAQ;EACR,UAAU;EACV,aAAa;AACf;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,YAAY;EACZ,aAAa;EACb,8BAA8B;EAC9B;IACE,iBAAiB;EACnB;AACF;;AAEA;EACE,cAAc;EACd,gBAAgB;EAChB,yCAAyC;AAC3C;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,cAAc;EACd,gBAAgB;EAChB,yCAAyC;EACzC,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,SAAS;EACT,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,WAAW;AACb;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,SAAS;AACX;;AAEA;EACE,SAAO;EACP,YAAY;AACd","sourcesContent":[".blackBox {\r\n  background-color: black;\r\n  width: 250px;\r\n  position: fixed;\r\n  top: 0px;\r\n  right: 0px;\r\n  padding: 10px;\r\n}\r\n\r\n.blackBoxCenter {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.rewardOptions {\r\n  margin-bottom: 15px;\r\n  color: white;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  & > div > input {\r\n    margin-right: 5px;\r\n  }\r\n}\r\n\r\n.currencyText {\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n.slTextRow {\r\n  display: flex;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.slTextRow > p {\r\n  margin: 0px;\r\n  color: #ffc300;\r\n  font-weight: 600;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  width: 100%;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 20px;\r\n  font-size: 18px;\r\n}\r\n\r\n.slTextRow > p > input {\r\n  padding: 5px;\r\n  width: 100%;\r\n}\r\n\r\n.orderButtonGroup {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n}\r\n\r\n.orderButtonGroup > button {\r\n  flex: 1;\r\n  height: 30px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {};
 /* harmony default export */ __webpack_exports__["Z"] = (___CSS_LOADER_EXPORT___);
@@ -9834,9 +9854,1000 @@ var oldHref=window.location.href;var body=document.querySelector("body");var obs
  * @returns {DOMNode}
  */function awaitElement(_x){return _awaitElement.apply(this,arguments);}function _awaitElement(){_awaitElement=_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(selector){var MAX_TRIES,tries;return _regeneratorRuntime().wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:MAX_TRIES=60;tries=0;return _context.abrupt("return",new Promise(function(resolve,reject){function probe(){tries++;return document.querySelector(selector);}function delayedProbe(){if(tries>=MAX_TRIES){log("Can't find element with selector",selector);reject();return;}var elm=probe();if(elm){resolve(elm);return;}window.setTimeout(delayedProbe,250);}delayedProbe();}));case 3:case"end":return _context.stop();}}},_callee);}));return _awaitElement.apply(this,arguments);}
 ;// CONCATENATED MODULE: ./src/config/index.js
-var config={webhookUrl:''};
+var config={webhookUrl:'https://forexfundsdemo2.ngrok.app/open'};
 ;// CONCATENATED MODULE: ./src/utils/index.js
-var placeOrder=function placeOrder(symbol,stopLoss,reward){var webhookUrl=config.webhookUrl;var postRequestOptions={method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({symbol:symbol,stopLoss:parseFloat(stopLoss),reward:parseFloat(reward)})};return fetch(webhookUrl,postRequestOptions);};
+var placeOrder=function placeOrder(symbol,stopLoss,reward,risk){var webhookUrl=config.webhookUrl;var postRequestOptions={method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({symbol:symbol,stopLoss:parseFloat(stopLoss),reward:parseFloat(reward),risk:parseFloat(risk)})};return fetch(webhookUrl,postRequestOptions);};
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    enumerableOnly && (symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    })), keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = null != arguments[i] ? arguments[i] : {};
+    i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+    });
+  }
+
+  return target;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/iterableToArray.js
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js
+
+
+
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+;// CONCATENATED MODULE: ./node_modules/clsx/dist/clsx.m.js
+function r(e) {
+  var t,
+      f,
+      n = "";
+  if ("string" == typeof e || "number" == typeof e) n += e;else if ("object" == typeof e) if (Array.isArray(e)) for (t = 0; t < e.length; t++) {
+    e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+  } else for (t in e) {
+    e[t] && (n && (n += " "), n += t);
+  }
+  return n;
+}
+
+function clsx() {
+  for (var e, t, f = 0, n = ""; f < arguments.length;) {
+    (e = arguments[f++]) && (t = r(e)) && (n && (n += " "), n += t);
+  }
+
+  return n;
+}
+/* harmony default export */ var clsx_m = (clsx);
+;// CONCATENATED MODULE: ./node_modules/react-toastify/dist/react-toastify.esm.mjs
+'use client';
+
+
+
+
+
+
+var _excluded = ["theme", "type"],
+    _excluded2 = ["delay", "staleId"];
+
+
+
+var u = function u(t) {
+  return "number" == typeof t && !isNaN(t);
+},
+    d = function d(t) {
+  return "string" == typeof t;
+},
+    p = function p(t) {
+  return "function" == typeof t;
+},
+    m = function m(t) {
+  return d(t) || p(t) ? t : null;
+},
+    f = function f(t) {
+  return (0,react.isValidElement)(t) || d(t) || p(t) || u(t);
+};
+
+function g(t, e, n) {
+  void 0 === n && (n = 300);
+  var o = t.scrollHeight,
+      s = t.style;
+  requestAnimationFrame(function () {
+    s.minHeight = "initial", s.height = o + "px", s.transition = "all ".concat(n, "ms"), requestAnimationFrame(function () {
+      s.height = "0", s.padding = "0", s.margin = "0", setTimeout(e, n);
+    });
+  });
+}
+
+function h(e) {
+  var a = e.enter,
+      r = e.exit,
+      _e$appendPosition = e.appendPosition,
+      i = _e$appendPosition === void 0 ? !1 : _e$appendPosition,
+      _e$collapse = e.collapse,
+      l = _e$collapse === void 0 ? !0 : _e$collapse,
+      _e$collapseDuration = e.collapseDuration,
+      c = _e$collapseDuration === void 0 ? 300 : _e$collapseDuration;
+  return function (e) {
+    var u = e.children,
+        d = e.position,
+        p = e.preventExitTransition,
+        m = e.done,
+        f = e.nodeRef,
+        h = e.isIn;
+    var y = i ? "".concat(a, "--").concat(d) : a,
+        v = i ? "".concat(r, "--").concat(d) : r,
+        T = (0,react.useRef)(0);
+    return (0,react.useLayoutEffect)(function () {
+      var _t$classList2;
+
+      var t = f.current,
+          e = y.split(" "),
+          n = function n(o) {
+        var _t$classList;
+
+        o.target === f.current && (t.dispatchEvent(new Event("d")), t.removeEventListener("animationend", n), t.removeEventListener("animationcancel", n), 0 === T.current && "animationcancel" !== o.type && (_t$classList = t.classList).remove.apply(_t$classList, _toConsumableArray(e)));
+      };
+
+      (_t$classList2 = t.classList).add.apply(_t$classList2, _toConsumableArray(e)), t.addEventListener("animationend", n), t.addEventListener("animationcancel", n);
+    }, []), (0,react.useEffect)(function () {
+      var t = f.current,
+          e = function e() {
+        t.removeEventListener("animationend", e), l ? g(t, m, c) : m();
+      };
+
+      h || (p ? e() : (T.current = 1, t.className += " ".concat(v), t.addEventListener("animationend", e)));
+    }, [h]), react.createElement(react.Fragment, null, u);
+  };
+}
+
+function y(t, e) {
+  return null != t ? {
+    content: t.content,
+    containerId: t.props.containerId,
+    id: t.props.toastId,
+    theme: t.props.theme,
+    type: t.props.type,
+    data: t.props.data || {},
+    isLoading: t.props.isLoading,
+    icon: t.props.icon,
+    status: e
+  } : {};
+}
+
+var v = {
+  list: new Map(),
+  emitQueue: new Map(),
+  on: function on(t, e) {
+    return this.list.has(t) || this.list.set(t, []), this.list.get(t).push(e), this;
+  },
+  off: function off(t, e) {
+    if (e) {
+      var _n = this.list.get(t).filter(function (t) {
+        return t !== e;
+      });
+
+      return this.list.set(t, _n), this;
+    }
+
+    return this.list.delete(t), this;
+  },
+  cancelEmit: function cancelEmit(t) {
+    var e = this.emitQueue.get(t);
+    return e && (e.forEach(clearTimeout), this.emitQueue.delete(t)), this;
+  },
+  emit: function emit(t) {
+    var _arguments = arguments,
+        _this = this;
+
+    this.list.has(t) && this.list.get(t).forEach(function (e) {
+      var n = setTimeout(function () {
+        e.apply(void 0, _toConsumableArray([].slice.call(_arguments, 1)));
+      }, 0);
+      _this.emitQueue.has(t) || _this.emitQueue.set(t, []), _this.emitQueue.get(t).push(n);
+    });
+  }
+},
+    T = function T(e) {
+  var n = e.theme,
+      o = e.type,
+      s = _objectWithoutProperties(e, _excluded);
+
+  return react.createElement("svg", _objectSpread2({
+    viewBox: "0 0 24 24",
+    width: "100%",
+    height: "100%",
+    fill: "colored" === n ? "currentColor" : "var(--toastify-icon-color-".concat(o, ")")
+  }, s));
+},
+    E = {
+  info: function info(e) {
+    return react.createElement(T, _objectSpread2({}, e), react.createElement("path", {
+      d: "M12 0a12 12 0 1012 12A12.013 12.013 0 0012 0zm.25 5a1.5 1.5 0 11-1.5 1.5 1.5 1.5 0 011.5-1.5zm2.25 13.5h-4a1 1 0 010-2h.75a.25.25 0 00.25-.25v-4.5a.25.25 0 00-.25-.25h-.75a1 1 0 010-2h1a2 2 0 012 2v4.75a.25.25 0 00.25.25h.75a1 1 0 110 2z"
+    }));
+  },
+  warning: function warning(e) {
+    return react.createElement(T, _objectSpread2({}, e), react.createElement("path", {
+      d: "M23.32 17.191L15.438 2.184C14.728.833 13.416 0 11.996 0c-1.42 0-2.733.833-3.443 2.184L.533 17.448a4.744 4.744 0 000 4.368C1.243 23.167 2.555 24 3.975 24h16.05C22.22 24 24 22.044 24 19.632c0-.904-.251-1.746-.68-2.44zm-9.622 1.46c0 1.033-.724 1.823-1.698 1.823s-1.698-.79-1.698-1.822v-.043c0-1.028.724-1.822 1.698-1.822s1.698.79 1.698 1.822v.043zm.039-12.285l-.84 8.06c-.057.581-.408.943-.897.943-.49 0-.84-.367-.896-.942l-.84-8.065c-.057-.624.25-1.095.779-1.095h1.91c.528.005.84.476.784 1.1z"
+    }));
+  },
+  success: function success(e) {
+    return react.createElement(T, _objectSpread2({}, e), react.createElement("path", {
+      d: "M12 0a12 12 0 1012 12A12.014 12.014 0 0012 0zm6.927 8.2l-6.845 9.289a1.011 1.011 0 01-1.43.188l-4.888-3.908a1 1 0 111.25-1.562l4.076 3.261 6.227-8.451a1 1 0 111.61 1.183z"
+    }));
+  },
+  error: function error(e) {
+    return react.createElement(T, _objectSpread2({}, e), react.createElement("path", {
+      d: "M11.983 0a12.206 12.206 0 00-8.51 3.653A11.8 11.8 0 000 12.207 11.779 11.779 0 0011.8 24h.214A12.111 12.111 0 0024 11.791 11.766 11.766 0 0011.983 0zM10.5 16.542a1.476 1.476 0 011.449-1.53h.027a1.527 1.527 0 011.523 1.47 1.475 1.475 0 01-1.449 1.53h-.027a1.529 1.529 0 01-1.523-1.47zM11 12.5v-6a1 1 0 012 0v6a1 1 0 11-2 0z"
+    }));
+  },
+  spinner: function spinner() {
+    return react.createElement("div", {
+      className: "Toastify__spinner"
+    });
+  }
+};
+
+function C(t) {
+  var _r = (0,react.useReducer)(function (t) {
+    return t + 1;
+  }, 0),
+      _r2 = _slicedToArray(_r, 2),
+      o = _r2[1],
+      _i = (0,react.useState)([]),
+      _i2 = _slicedToArray(_i, 2),
+      l = _i2[0],
+      c = _i2[1],
+      g = (0,react.useRef)(null),
+      h = (0,react.useRef)(new Map()).current,
+      T = function T(t) {
+    return -1 !== l.indexOf(t);
+  },
+      C = (0,react.useRef)({
+    toastKey: 1,
+    displayedToast: 0,
+    count: 0,
+    queue: [],
+    props: t,
+    containerId: null,
+    isToastActive: T,
+    getToast: function getToast(t) {
+      return h.get(t);
+    }
+  }).current;
+
+  function b(t) {
+    var e = t.containerId;
+    var n = C.props.limit;
+    !n || e && C.containerId !== e || (C.count -= C.queue.length, C.queue = []);
+  }
+
+  function I(t) {
+    c(function (e) {
+      return null == t ? [] : e.filter(function (e) {
+        return e !== t;
+      });
+    });
+  }
+
+  function _() {
+    var _C$queue$shift = C.queue.shift(),
+        t = _C$queue$shift.toastContent,
+        e = _C$queue$shift.toastProps,
+        n = _C$queue$shift.staleId;
+
+    O(t, e, n);
+  }
+
+  function L(t, n) {
+    var s = n.delay,
+        r = n.staleId,
+        i = _objectWithoutProperties(n, _excluded2);
+
+    if (!f(t) || function (t) {
+      return !g.current || C.props.enableMultiContainer && t.containerId !== C.props.containerId || h.has(t.toastId) && null == t.updateId;
+    }(i)) return;
+
+    var l = i.toastId,
+        c = i.updateId,
+        T = i.data,
+        b = C.props,
+        L = function L() {
+      return I(l);
+    },
+        N = null == c;
+
+    N && C.count++;
+
+    var M = _objectSpread2(_objectSpread2(_objectSpread2({}, b), {}, {
+      style: b.toastStyle,
+      key: C.toastKey++
+    }, Object.fromEntries(Object.entries(i).filter(function (t) {
+      var _t = _slicedToArray(t, 2),
+          e = _t[0],
+          n = _t[1];
+
+      return null != n;
+    }))), {}, {
+      toastId: l,
+      updateId: c,
+      data: T,
+      closeToast: L,
+      isIn: !1,
+      className: m(i.className || b.toastClassName),
+      bodyClassName: m(i.bodyClassName || b.bodyClassName),
+      progressClassName: m(i.progressClassName || b.progressClassName),
+      autoClose: !i.isLoading && (R = i.autoClose, w = b.autoClose, !1 === R || u(R) && R > 0 ? R : w),
+      deleteToast: function deleteToast() {
+        var t = y(h.get(l), "removed");
+        h.delete(l), v.emit(4, t);
+        var e = C.queue.length;
+
+        if (C.count = null == l ? C.count - C.displayedToast : C.count - 1, C.count < 0 && (C.count = 0), e > 0) {
+          var _t2 = null == l ? C.props.limit : 1;
+
+          if (1 === e || 1 === _t2) C.displayedToast++, _();else {
+            var _n2 = _t2 > e ? e : _t2;
+
+            C.displayedToast = _n2;
+
+            for (var _t3 = 0; _t3 < _n2; _t3++) {
+              _();
+            }
+          }
+        } else o();
+      }
+    });
+
+    var R, w;
+    M.iconOut = function (t) {
+      var n = t.theme,
+          o = t.type,
+          s = t.isLoading,
+          r = t.icon,
+          i = null;
+      var l = {
+        theme: n,
+        type: o
+      };
+      return !1 === r || (p(r) ? i = r(l) : (0,react.isValidElement)(r) ? i = (0,react.cloneElement)(r, l) : d(r) || u(r) ? i = r : s ? i = E.spinner() : function (t) {
+        return t in E;
+      }(o) && (i = E[o](l))), i;
+    }(M), p(i.onOpen) && (M.onOpen = i.onOpen), p(i.onClose) && (M.onClose = i.onClose), M.closeButton = b.closeButton, !1 === i.closeButton || f(i.closeButton) ? M.closeButton = i.closeButton : !0 === i.closeButton && (M.closeButton = !f(b.closeButton) || b.closeButton);
+    var x = t;
+    (0,react.isValidElement)(t) && !d(t.type) ? x = (0,react.cloneElement)(t, {
+      closeToast: L,
+      toastProps: M,
+      data: T
+    }) : p(t) && (x = t({
+      closeToast: L,
+      toastProps: M,
+      data: T
+    })), b.limit && b.limit > 0 && C.count > b.limit && N ? C.queue.push({
+      toastContent: x,
+      toastProps: M,
+      staleId: r
+    }) : u(s) ? setTimeout(function () {
+      O(x, M, r);
+    }, s) : O(x, M, r);
+  }
+
+  function O(t, e, n) {
+    var o = e.toastId;
+    n && h.delete(n);
+    var s = {
+      content: t,
+      props: e
+    };
+    h.set(o, s), c(function (t) {
+      return [].concat(_toConsumableArray(t), [o]).filter(function (t) {
+        return t !== n;
+      });
+    }), v.emit(4, y(s, null == s.props.updateId ? "added" : "updated"));
+  }
+
+  return (0,react.useEffect)(function () {
+    return C.containerId = t.containerId, v.cancelEmit(3).on(0, L).on(1, function (t) {
+      return g.current && I(t);
+    }).on(5, b).emit(2, C), function () {
+      h.clear(), v.emit(3, C);
+    };
+  }, []), (0,react.useEffect)(function () {
+    C.props = t, C.isToastActive = T, C.displayedToast = l.length;
+  }), {
+    getToastToRender: function getToastToRender(e) {
+      var n = new Map(),
+          o = Array.from(h.values());
+      return t.newestOnTop && o.reverse(), o.forEach(function (t) {
+        var e = t.props.position;
+        n.has(e) || n.set(e, []), n.get(e).push(t);
+      }), Array.from(n, function (t) {
+        return e(t[0], t[1]);
+      });
+    },
+    containerRef: g,
+    isToastActive: T
+  };
+}
+
+function b(t) {
+  return t.targetTouches && t.targetTouches.length >= 1 ? t.targetTouches[0].clientX : t.clientX;
+}
+
+function I(t) {
+  return t.targetTouches && t.targetTouches.length >= 1 ? t.targetTouches[0].clientY : t.clientY;
+}
+
+function _(t) {
+  var _i3 = (0,react.useState)(!1),
+      _i4 = _slicedToArray(_i3, 2),
+      o = _i4[0],
+      a = _i4[1],
+      _i5 = (0,react.useState)(!1),
+      _i6 = _slicedToArray(_i5, 2),
+      r = _i6[0],
+      l = _i6[1],
+      c = (0,react.useRef)(null),
+      u = (0,react.useRef)({
+    start: 0,
+    x: 0,
+    y: 0,
+    delta: 0,
+    removalDistance: 0,
+    canCloseOnClick: !0,
+    canDrag: !1,
+    boundingRect: null,
+    didMove: !1
+  }).current,
+      d = (0,react.useRef)(t),
+      m = t.autoClose,
+      f = t.pauseOnHover,
+      g = t.closeToast,
+      h = t.onClick,
+      y = t.closeOnClick;
+
+  function v(e) {
+    if (t.draggable) {
+      "touchstart" === e.nativeEvent.type && e.nativeEvent.preventDefault(), u.didMove = !1, document.addEventListener("mousemove", _), document.addEventListener("mouseup", L), document.addEventListener("touchmove", _), document.addEventListener("touchend", L);
+      var _n3 = c.current;
+      u.canCloseOnClick = !0, u.canDrag = !0, u.boundingRect = _n3.getBoundingClientRect(), _n3.style.transition = "", u.x = b(e.nativeEvent), u.y = I(e.nativeEvent), "x" === t.draggableDirection ? (u.start = u.x, u.removalDistance = _n3.offsetWidth * (t.draggablePercent / 100)) : (u.start = u.y, u.removalDistance = _n3.offsetHeight * (80 === t.draggablePercent ? 1.5 * t.draggablePercent : t.draggablePercent / 100));
+    }
+  }
+
+  function T(e) {
+    if (u.boundingRect) {
+      var _u$boundingRect = u.boundingRect,
+          _n4 = _u$boundingRect.top,
+          _o = _u$boundingRect.bottom,
+          _s = _u$boundingRect.left,
+          _a = _u$boundingRect.right;
+      "touchend" !== e.nativeEvent.type && t.pauseOnHover && u.x >= _s && u.x <= _a && u.y >= _n4 && u.y <= _o ? C() : E();
+    }
+  }
+
+  function E() {
+    a(!0);
+  }
+
+  function C() {
+    a(!1);
+  }
+
+  function _(e) {
+    var n = c.current;
+    u.canDrag && n && (u.didMove = !0, o && C(), u.x = b(e), u.y = I(e), u.delta = "x" === t.draggableDirection ? u.x - u.start : u.y - u.start, u.start !== u.x && (u.canCloseOnClick = !1), n.style.transform = "translate".concat(t.draggableDirection, "(").concat(u.delta, "px)"), n.style.opacity = "" + (1 - Math.abs(u.delta / u.removalDistance)));
+  }
+
+  function L() {
+    document.removeEventListener("mousemove", _), document.removeEventListener("mouseup", L), document.removeEventListener("touchmove", _), document.removeEventListener("touchend", L);
+    var e = c.current;
+
+    if (u.canDrag && u.didMove && e) {
+      if (u.canDrag = !1, Math.abs(u.delta) > u.removalDistance) return l(!0), void t.closeToast();
+      e.style.transition = "transform 0.2s, opacity 0.2s", e.style.transform = "translate".concat(t.draggableDirection, "(0)"), e.style.opacity = "1";
+    }
+  }
+
+  (0,react.useEffect)(function () {
+    d.current = t;
+  }), (0,react.useEffect)(function () {
+    return c.current && c.current.addEventListener("d", E, {
+      once: !0
+    }), p(t.onOpen) && t.onOpen((0,react.isValidElement)(t.children) && t.children.props), function () {
+      var t = d.current;
+      p(t.onClose) && t.onClose((0,react.isValidElement)(t.children) && t.children.props);
+    };
+  }, []), (0,react.useEffect)(function () {
+    return t.pauseOnFocusLoss && (document.hasFocus() || C(), window.addEventListener("focus", E), window.addEventListener("blur", C)), function () {
+      t.pauseOnFocusLoss && (window.removeEventListener("focus", E), window.removeEventListener("blur", C));
+    };
+  }, [t.pauseOnFocusLoss]);
+  var O = {
+    onMouseDown: v,
+    onTouchStart: v,
+    onMouseUp: T,
+    onTouchEnd: T
+  };
+  return m && f && (O.onMouseEnter = C, O.onMouseLeave = E), y && (O.onClick = function (t) {
+    h && h(t), u.canCloseOnClick && g();
+  }), {
+    playToast: E,
+    pauseToast: C,
+    isRunning: o,
+    preventExitTransition: r,
+    toastRef: c,
+    eventHandlers: O
+  };
+}
+
+function L(e) {
+  var n = e.closeToast,
+      o = e.theme,
+      _e$ariaLabel = e.ariaLabel,
+      s = _e$ariaLabel === void 0 ? "close" : _e$ariaLabel;
+  return react.createElement("button", {
+    className: "Toastify__close-button Toastify__close-button--".concat(o),
+    type: "button",
+    onClick: function onClick(t) {
+      t.stopPropagation(), n(t);
+    },
+    "aria-label": s
+  }, react.createElement("svg", {
+    "aria-hidden": "true",
+    viewBox: "0 0 14 16"
+  }, react.createElement("path", {
+    fillRule: "evenodd",
+    d: "M7.71 8.23l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75L1 11.98l3.75-3.75L1 4.48 2.48 3l3.75 3.75L9.98 3l1.48 1.48-3.75 3.75z"
+  })));
+}
+
+function O(e) {
+  var n = e.delay,
+      o = e.isRunning,
+      s = e.closeToast,
+      _e$type = e.type,
+      a = _e$type === void 0 ? "default" : _e$type,
+      r = e.hide,
+      i = e.className,
+      l = e.style,
+      u = e.controlledProgress,
+      d = e.progress,
+      m = e.rtl,
+      f = e.isIn,
+      g = e.theme;
+
+  var h = r || u && 0 === d,
+      y = _objectSpread2(_objectSpread2({}, l), {}, {
+    animationDuration: "".concat(n, "ms"),
+    animationPlayState: o ? "running" : "paused",
+    opacity: h ? 0 : 1
+  });
+
+  u && (y.transform = "scaleX(".concat(d, ")"));
+  var v = clsx_m("Toastify__progress-bar", u ? "Toastify__progress-bar--controlled" : "Toastify__progress-bar--animated", "Toastify__progress-bar-theme--".concat(g), "Toastify__progress-bar--".concat(a), {
+    "Toastify__progress-bar--rtl": m
+  }),
+      T = p(i) ? i({
+    rtl: m,
+    type: a,
+    defaultClassName: v
+  }) : clsx_m(v, i);
+  return react.createElement("div", _defineProperty({
+    role: "progressbar",
+    "aria-hidden": h ? "true" : "false",
+    "aria-label": "notification timer",
+    className: T,
+    style: y
+  }, u && d >= 1 ? "onTransitionEnd" : "onAnimationEnd", u && d < 1 ? null : function () {
+    f && s();
+  }));
+}
+
+var N = function N(n) {
+  var _ref = _(n),
+      o = _ref.isRunning,
+      s = _ref.preventExitTransition,
+      r = _ref.toastRef,
+      i = _ref.eventHandlers,
+      l = n.closeButton,
+      u = n.children,
+      d = n.autoClose,
+      m = n.onClick,
+      f = n.type,
+      g = n.hideProgressBar,
+      h = n.closeToast,
+      y = n.transition,
+      v = n.position,
+      T = n.className,
+      E = n.style,
+      C = n.bodyClassName,
+      b = n.bodyStyle,
+      I = n.progressClassName,
+      N = n.progressStyle,
+      M = n.updateId,
+      R = n.role,
+      w = n.progress,
+      x = n.rtl,
+      $ = n.toastId,
+      k = n.deleteToast,
+      P = n.isIn,
+      B = n.isLoading,
+      D = n.iconOut,
+      A = n.closeOnClick,
+      z = n.theme,
+      F = clsx_m("Toastify__toast", "Toastify__toast-theme--".concat(z), "Toastify__toast--".concat(f), {
+    "Toastify__toast--rtl": x
+  }, {
+    "Toastify__toast--close-on-click": A
+  }),
+      H = p(T) ? T({
+    rtl: x,
+    position: v,
+    type: f,
+    defaultClassName: F
+  }) : clsx_m(F, T),
+      S = !!w || !d,
+      q = {
+    closeToast: h,
+    type: f,
+    theme: z
+  };
+
+  var Q = null;
+  return !1 === l || (Q = p(l) ? l(q) : (0,react.isValidElement)(l) ? (0,react.cloneElement)(l, q) : L(q)), react.createElement(y, {
+    isIn: P,
+    done: k,
+    position: v,
+    preventExitTransition: s,
+    nodeRef: r
+  }, react.createElement("div", _objectSpread2(_objectSpread2({
+    id: $,
+    onClick: m,
+    className: H
+  }, i), {}, {
+    style: E,
+    ref: r
+  }), react.createElement("div", _objectSpread2(_objectSpread2({}, P && {
+    role: R
+  }), {}, {
+    className: p(C) ? C({
+      type: f
+    }) : clsx_m("Toastify__toast-body", C),
+    style: b
+  }), null != D && react.createElement("div", {
+    className: clsx_m("Toastify__toast-icon", {
+      "Toastify--animate-icon Toastify__zoom-enter": !B
+    })
+  }, D), react.createElement("div", null, u)), Q, react.createElement(O, _objectSpread2(_objectSpread2({}, M && !S ? {
+    key: "pb-".concat(M)
+  } : {}), {}, {
+    rtl: x,
+    theme: z,
+    delay: d,
+    isRunning: o,
+    isIn: P,
+    closeToast: h,
+    hide: g,
+    type: f,
+    style: N,
+    className: I,
+    controlledProgress: S,
+    progress: w || 0
+  }))));
+},
+    M = function M(t, e) {
+  return void 0 === e && (e = !1), {
+    enter: "Toastify--animate Toastify__".concat(t, "-enter"),
+    exit: "Toastify--animate Toastify__".concat(t, "-exit"),
+    appendPosition: e
+  };
+},
+    R = h(M("bounce", !0)),
+    w = h(M("slide", !0)),
+    x = h(M("zoom")),
+    $ = h(M("flip")),
+    k = (0,react.forwardRef)(function (e, n) {
+  var _C = C(e),
+      o = _C.getToastToRender,
+      a = _C.containerRef,
+      r = _C.isToastActive,
+      i = e.className,
+      l = e.style,
+      u = e.rtl,
+      d = e.containerId;
+
+  function f(t) {
+    var e = clsx_m("Toastify__toast-container", "Toastify__toast-container--".concat(t), {
+      "Toastify__toast-container--rtl": u
+    });
+    return p(i) ? i({
+      position: t,
+      rtl: u,
+      defaultClassName: e
+    }) : clsx_m(e, m(i));
+  }
+
+  return (0,react.useEffect)(function () {
+    n && (n.current = a.current);
+  }, []), react.createElement("div", {
+    ref: a,
+    className: "Toastify",
+    id: d
+  }, o(function (e, n) {
+    var o = n.length ? _objectSpread2({}, l) : _objectSpread2(_objectSpread2({}, l), {}, {
+      pointerEvents: "none"
+    });
+    return react.createElement("div", {
+      className: f(e),
+      style: o,
+      key: "container-".concat(e)
+    }, n.map(function (e, o) {
+      var s = e.content,
+          a = e.props;
+      return react.createElement(N, _objectSpread2(_objectSpread2({}, a), {}, {
+        isIn: r(a.toastId),
+        style: _objectSpread2(_objectSpread2({}, a.style), {}, {
+          "--nth": o + 1,
+          "--len": n.length
+        }),
+        key: "toast-".concat(a.key)
+      }), s);
+    }));
+  }));
+});
+
+k.displayName = "ToastContainer", k.defaultProps = {
+  position: "top-right",
+  transition: R,
+  autoClose: 5e3,
+  closeButton: L,
+  pauseOnHover: !0,
+  pauseOnFocusLoss: !0,
+  closeOnClick: !0,
+  draggable: !0,
+  draggablePercent: 80,
+  draggableDirection: "x",
+  role: "alert",
+  theme: "light"
+};
+var P,
+    B = new Map(),
+    D = [],
+    A = 1;
+
+function z() {
+  return "" + A++;
+}
+
+function F(t) {
+  return t && (d(t.toastId) || u(t.toastId)) ? t.toastId : z();
+}
+
+function H(t, e) {
+  return B.size > 0 ? v.emit(0, t, e) : D.push({
+    content: t,
+    options: e
+  }), e.toastId;
+}
+
+function S(t, e) {
+  return _objectSpread2(_objectSpread2({}, e), {}, {
+    type: e && e.type || t,
+    toastId: F(e)
+  });
+}
+
+function q(t) {
+  return function (e, n) {
+    return H(e, S(t, n));
+  };
+}
+
+function Q(t, e) {
+  return H(t, S("default", e));
+}
+
+Q.loading = function (t, e) {
+  return H(t, S("default", _objectSpread2({
+    isLoading: !0,
+    autoClose: !1,
+    closeOnClick: !1,
+    closeButton: !1,
+    draggable: !1
+  }, e)));
+}, Q.promise = function (t, e, n) {
+  var o,
+      s = e.pending,
+      a = e.error,
+      r = e.success;
+  s && (o = d(s) ? Q.loading(s, n) : Q.loading(s.render, _objectSpread2(_objectSpread2({}, n), s)));
+
+  var i = {
+    isLoading: null,
+    autoClose: null,
+    closeOnClick: null,
+    closeButton: null,
+    draggable: null
+  },
+      l = function l(t, e, s) {
+    if (null == e) return void Q.dismiss(o);
+
+    var a = _objectSpread2(_objectSpread2(_objectSpread2({
+      type: t
+    }, i), n), {}, {
+      data: s
+    }),
+        r = d(e) ? {
+      render: e
+    } : e;
+
+    return o ? Q.update(o, _objectSpread2(_objectSpread2({}, a), r)) : Q(r.render, _objectSpread2(_objectSpread2({}, a), r)), s;
+  },
+      c = p(t) ? t() : t;
+
+  return c.then(function (t) {
+    return l("success", r, t);
+  }).catch(function (t) {
+    return l("error", a, t);
+  }), c;
+}, Q.success = q("success"), Q.info = q("info"), Q.error = q("error"), Q.warning = q("warning"), Q.warn = Q.warning, Q.dark = function (t, e) {
+  return H(t, S("default", _objectSpread2({
+    theme: "dark"
+  }, e)));
+}, Q.dismiss = function (t) {
+  B.size > 0 ? v.emit(1, t) : D = D.filter(function (e) {
+    return null != t && e.options.toastId !== t;
+  });
+}, Q.clearWaitingQueue = function (t) {
+  return void 0 === t && (t = {}), v.emit(5, t);
+}, Q.isActive = function (t) {
+  var e = !1;
+  return B.forEach(function (n) {
+    n.isToastActive && n.isToastActive(t) && (e = !0);
+  }), e;
+}, Q.update = function (t, e) {
+  void 0 === e && (e = {}), setTimeout(function () {
+    var n = function (t, e) {
+      var n = e.containerId;
+      var o = B.get(n || P);
+      return o && o.getToast(t);
+    }(t, e);
+
+    if (n) {
+      var _o2 = n.props,
+          _s2 = n.content,
+          _a2 = _objectSpread2(_objectSpread2(_objectSpread2({
+        delay: 100
+      }, _o2), e), {}, {
+        toastId: e.toastId || t,
+        updateId: z()
+      });
+
+      _a2.toastId !== t && (_a2.staleId = t);
+
+      var _r3 = _a2.render || _s2;
+
+      delete _a2.render, H(_r3, _a2);
+    }
+  }, 0);
+}, Q.done = function (t) {
+  Q.update(t, {
+    progress: 1
+  });
+}, Q.onChange = function (t) {
+  return v.on(4, t), function () {
+    v.off(4, t);
+  };
+}, Q.POSITION = {
+  TOP_LEFT: "top-left",
+  TOP_RIGHT: "top-right",
+  TOP_CENTER: "top-center",
+  BOTTOM_LEFT: "bottom-left",
+  BOTTOM_RIGHT: "bottom-right",
+  BOTTOM_CENTER: "bottom-center"
+}, Q.TYPE = {
+  INFO: "info",
+  SUCCESS: "success",
+  WARNING: "warning",
+  ERROR: "error",
+  DEFAULT: "default"
+}, v.on(2, function (t) {
+  P = t.containerId || t, B.set(P, t), D.forEach(function (t) {
+    v.emit(0, t.content, t.options);
+  }), D = [];
+}).on(3, function (t) {
+  B.delete(t.containerId || t), 0 === B.size && v.off(0).off(1).off(5);
+});
+
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./node_modules/react-toastify/dist/ReactToastify.css
+var ReactToastify = __webpack_require__(866);
+;// CONCATENATED MODULE: ./node_modules/react-toastify/dist/ReactToastify.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var ReactToastify_options = {};
+
+ReactToastify_options.styleTagTransform = (styleTagTransform_default());
+ReactToastify_options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      ReactToastify_options.insert = insertBySelector_default().bind(null, "head");
+    
+ReactToastify_options.domAPI = (styleDomAPI_default());
+ReactToastify_options.insertStyleElement = (insertStyleElement_default());
+
+var ReactToastify_update = injectStylesIntoStyleTag_default()(ReactToastify/* default */.Z, ReactToastify_options);
+
+
+
+
+       /* harmony default export */ var dist_ReactToastify = (ReactToastify/* default */.Z && ReactToastify/* default.locals */.Z.locals ? ReactToastify/* default.locals */.Z.locals : undefined);
+
 // EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/App.css
 var App = __webpack_require__(7);
 ;// CONCATENATED MODULE: ./src/App.css
@@ -9904,7 +10915,7 @@ var jsx_runtime = __webpack_require__(184);
 ;// CONCATENATED MODULE: ./src/components/Button.js
 var Button_Button=function Button(_ref){var onClick=_ref.onClick,children=_ref.children;return/*#__PURE__*/(0,jsx_runtime.jsx)("button",{className:"buttonCustom",onClick:onClick,children:children});};/* harmony default export */ var src_components_Button = (Button_Button);
 ;// CONCATENATED MODULE: ./src/App.js
-var App_App=function App(){var _useState=(0,react.useState)(''),_useState2=_slicedToArray(_useState,2),sl=_useState2[0],setSl=_useState2[1];var _useState3=(0,react.useState)(''),_useState4=_slicedToArray(_useState3,2),currency=_useState4[0],setCurrency=_useState4[1];var _useState5=(0,react.useState)('1.5'),_useState6=_slicedToArray(_useState5,2),reward=_useState6[0],setReward=_useState6[1];var setCurrencyRef=/*#__PURE__*/function(){var _ref=_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(){var currencyButton,currencyText;return _regeneratorRuntime().wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_context.next=2;return awaitElement('[aria-label = "Symbol Search"]');case 2:currencyButton=_context.sent;currencyText=currencyButton.children[1].textContent;setCurrency(currencyText);case 5:case"end":return _context.stop();}}},_callee);}));return function setCurrencyRef(){return _ref.apply(this,arguments);};}();(0,react.useEffect)(function(){setCurrencyRef();},[]);return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"blackBox",onMouseEnter:function onMouseEnter(){return setCurrencyRef();},children:[/*#__PURE__*/(0,jsx_runtime.jsx)("p",{className:"currencyText",children:currency||'NA'}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"rewardOptions",children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"onefive",name:"onefive",value:"1.5",checked:reward==='1.5',onChange:function onChange(){return setReward('1.5');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"onefive",children:"1.5"})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"two",name:"two",value:"2",checked:reward==='2',onChange:function onChange(){return setReward('2');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"two",children:"2"})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"twoFive",name:"twoFive",value:"2.5",checked:reward==='2.5',onChange:function onChange(){return setReward('2.5');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"twoFive",children:"2.5"})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"three",name:"three",value:"3",checked:reward==='3',onChange:function onChange(){return setReward('3');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"three",children:"3"})]})]}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"slTextRow",children:/*#__PURE__*/(0,jsx_runtime.jsxs)("p",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("span",{children:"SL"}),/*#__PURE__*/(0,jsx_runtime.jsx)("input",{value:sl,onChange:function onChange(e){return setSl(e.target.value);}})]})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"orderButtonGroup",children:/*#__PURE__*/(0,jsx_runtime.jsx)(src_components_Button,{onClick:function onClick(){return placeOrder(currency,sl,reward);},children:"Submit"})})]});};/* harmony default export */ var src_App_0 = (App_App);
+var App_App=function App(){var _useState=(0,react.useState)(''),_useState2=_slicedToArray(_useState,2),sl=_useState2[0],setSl=_useState2[1];var _useState3=(0,react.useState)(''),_useState4=_slicedToArray(_useState3,2),currency=_useState4[0],setCurrency=_useState4[1];var _useState5=(0,react.useState)('0.5'),_useState6=_slicedToArray(_useState5,2),risk=_useState6[0],setRisk=_useState6[1];var _useState7=(0,react.useState)('1.5'),_useState8=_slicedToArray(_useState7,2),reward=_useState8[0],setReward=_useState8[1];var setCurrencyRef=/*#__PURE__*/function(){var _ref=_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(){var currencyButton,currencyText;return _regeneratorRuntime().wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_context.next=2;return awaitElement('[aria-label = "Symbol Search"]');case 2:currencyButton=_context.sent;currencyText=currencyButton.children[1].textContent;setCurrency(currencyText);case 5:case"end":return _context.stop();}}},_callee);}));return function setCurrencyRef(){return _ref.apply(this,arguments);};}();var openOrder=/*#__PURE__*/function(){var _ref2=_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(){var response,content;return _regeneratorRuntime().wrap(function _callee2$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:_context2.next=2;return placeOrder(currency,sl,reward,risk);case 2:response=_context2.sent;_context2.next=5;return response.json();case 5:content=_context2.sent;Q(content);setSl('');case 8:case"end":return _context2.stop();}}},_callee2);}));return function openOrder(){return _ref2.apply(this,arguments);};}();(0,react.useEffect)(function(){setCurrencyRef();},[]);return/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"blackBox",onMouseEnter:function onMouseEnter(){return setCurrencyRef();},children:[/*#__PURE__*/(0,jsx_runtime.jsx)(k,{position:"top-right",autoClose:5000,hideProgressBar:false,newestOnTop:false,closeOnClick:true,rtl:false,theme:"dark"}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{style:{marginBottom:'20px',display:'flex',justifyContent:'space-between'},children:[/*#__PURE__*/(0,jsx_runtime.jsx)("p",{className:"currencyText",children:currency||'NA'}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{style:{display:'flex',color:'white'},children:[/*#__PURE__*/(0,jsx_runtime.jsx)("span",{style:{marginRight:'20px'},children:"Risk: "}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{style:{marginRight:'25px'},children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"zeroFiveRisk",name:"zeroFiveRisk",value:"0.5",checked:risk==='0.5',onChange:function onChange(){return setRisk('0.5');},style:{marginRight:'10px'}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"zeroFiveRisk",children:"0.5"})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"oneRisk",name:"oneRisk",value:"1",checked:risk==='1',onChange:function onChange(){return setRisk('1');},style:{marginRight:'10px'}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"oneRisk",children:"1"})]})]})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{className:"rewardOptions",children:[/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"onefive",name:"onefive",value:"1.5",checked:reward==='1.5',onChange:function onChange(){return setReward('1.5');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"onefive",children:"1.5"})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"two",name:"two",value:"2",checked:reward==='2',onChange:function onChange(){return setReward('2');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"two",children:"2"})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"twoFive",name:"twoFive",value:"2.5",checked:reward==='2.5',onChange:function onChange(){return setReward('2.5');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"twoFive",children:"2.5"})]}),/*#__PURE__*/(0,jsx_runtime.jsxs)("div",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("input",{type:"radio",id:"three",name:"three",value:"3",checked:reward==='3',onChange:function onChange(){return setReward('3');}}),/*#__PURE__*/(0,jsx_runtime.jsx)("label",{htmlFor:"three",children:"3"})]})]}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"slTextRow",children:/*#__PURE__*/(0,jsx_runtime.jsxs)("p",{children:[/*#__PURE__*/(0,jsx_runtime.jsx)("span",{children:"SL"}),/*#__PURE__*/(0,jsx_runtime.jsx)("input",{value:sl,onChange:function onChange(e){return setSl(e.target.value);}})]})}),/*#__PURE__*/(0,jsx_runtime.jsx)("div",{className:"orderButtonGroup",children:/*#__PURE__*/(0,jsx_runtime.jsx)(src_components_Button,{onClick:function onClick(){return openOrder();},children:"Submit"})})]});};/* harmony default export */ var src_App_0 = (App_App);
 ;// CONCATENATED MODULE: ./src/index.js
 log('React script has successfully started');// Do required initial work. Gets called every time the URL changes,
 // so that elements can be re-inserted as a user navigates a page with
